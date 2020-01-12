@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF86623CB8D3400B6D192 /* AppDelegate.swift */; };
-		C90AF86923CB8D3400B6D192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF86823CB8D3400B6D192 /* ViewController.swift */; };
 		C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86A23CB8D3400B6D192 /* Main.storyboard */; };
 		C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86D23CB8D3500B6D192 /* Assets.xcassets */; };
 		C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */; };
 		C90AF87C23CB8D3500B6D192 /* DictyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF87B23CB8D3500B6D192 /* DictyTests.swift */; };
 		C90AF88723CB8D3500B6D192 /* DictyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF88623CB8D3500B6D192 /* DictyUITests.swift */; };
+		C90AF89623CB8E3100B6D192 /* NewWord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89423CB8E3100B6D192 /* NewWord.storyboard */; };
+		C90AF89A23CB8E8E00B6D192 /* Dictys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */; };
+		C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */; };
+		C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		C90AF86323CB8D3400B6D192 /* Dicty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF86623CB8D3400B6D192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C90AF86823CB8D3400B6D192 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C90AF86B23CB8D3400B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C90AF86D23CB8D3500B6D192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90AF87023CB8D3500B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		C90AF88223CB8D3500B6D192 /* DictyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF88623CB8D3500B6D192 /* DictyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyUITests.swift; sourceTree = "<group>"; };
 		C90AF88823CB8D3500B6D192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C90AF89523CB8E3100B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dicty/Base.lproj/NewWord.storyboard; sourceTree = "<group>"; };
+		C90AF89923CB8E8E00B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dicty/Base.lproj/Dictys.storyboard; sourceTree = "<group>"; };
+		C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoolStuff.storyboard; sourceTree = "<group>"; };
+		C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,8 @@
 		C90AF86523CB8D3400B6D192 /* Dicty */ = {
 			isa = PBXGroup;
 			children = (
+				C90AF89723CB8E3D00B6D192 /* Storyboards */,
 				C90AF86623CB8D3400B6D192 /* AppDelegate.swift */,
-				C90AF86823CB8D3400B6D192 /* ViewController.swift */,
 				C90AF86A23CB8D3400B6D192 /* Main.storyboard */,
 				C90AF86D23CB8D3500B6D192 /* Assets.xcassets */,
 				C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */,
@@ -123,6 +129,17 @@
 				C90AF88823CB8D3500B6D192 /* Info.plist */,
 			);
 			path = DictyUITests;
+			sourceTree = "<group>";
+		};
+		C90AF89723CB8E3D00B6D192 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */,
+				C90AF89423CB8E3100B6D192 /* NewWord.storyboard */,
+				C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */,
+				C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +246,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C90AF89A23CB8E8E00B6D192 /* Dictys.storyboard in Resources */,
 				C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */,
 				C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */,
 				C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */,
+				C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */,
+				C90AF89623CB8E3100B6D192 /* NewWord.storyboard in Resources */,
+				C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C90AF86923CB8D3400B6D192 /* ViewController.swift in Sources */,
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +327,22 @@
 				C90AF87023CB8D3500B6D192 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C90AF89423CB8E3100B6D192 /* NewWord.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AF89523CB8E3100B6D192 /* Base */,
+			);
+			name = NewWord.storyboard;
+			sourceTree = "<group>";
+		};
+		C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C90AF89923CB8E8E00B6D192 /* Base */,
+			);
+			name = Dictys.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
