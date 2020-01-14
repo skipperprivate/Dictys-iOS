@@ -17,6 +17,8 @@
 		C90AF89A23CB8E8E00B6D192 /* Dictys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */; };
 		C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */; };
 		C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */; };
+		C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210EC923CB939D00630147 /* SettingsView.swift */; };
+		C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210ECB23CB946B00630147 /* SettingsData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		C90AF89923CB8E8E00B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dicty/Base.lproj/Dictys.storyboard; sourceTree = "<group>"; };
 		C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoolStuff.storyboard; sourceTree = "<group>"; };
 		C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		C9210EC923CB939D00630147 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C9210ECB23CB946B00630147 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +107,14 @@
 		C90AF86523CB8D3400B6D192 /* Dicty */ = {
 			isa = PBXGroup;
 			children = (
+				C9210EC923CB939D00630147 /* SettingsView.swift */,
 				C90AF89723CB8E3D00B6D192 /* Storyboards */,
 				C90AF86623CB8D3400B6D192 /* AppDelegate.swift */,
 				C90AF86A23CB8D3400B6D192 /* Main.storyboard */,
 				C90AF86D23CB8D3500B6D192 /* Assets.xcassets */,
 				C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */,
 				C90AF87223CB8D3500B6D192 /* Info.plist */,
+				C9210ECB23CB946B00630147 /* SettingsData.swift */,
 			);
 			path = Dicty;
 			sourceTree = "<group>";
@@ -278,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
+				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
+				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

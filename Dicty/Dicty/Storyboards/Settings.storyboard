@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1W6-az-cyE" kind="relationship" relationship="rootViewController" id="3PH-md-jLG"/>
+                        <segue destination="fBe-r3-nsw" kind="relationship" relationship="rootViewController" id="3B9-8X-FON"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TWC-sw-sBe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -28,20 +28,36 @@
             <point key="canvasLocation" x="-1661" y="221"/>
         </scene>
         <!--Settings-->
-        <scene sceneID="N4e-tC-cWG">
+        <scene sceneID="0hW-w3-82A">
             <objects>
-                <viewController id="1W6-az-cyE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="H6z-9x-She">
+                <viewController id="fBe-r3-nsw" customClass="SettingsViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ud-uF-61C">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jDU-jC-9DA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fBe-r3-nsw" id="ZUC-Sa-g2u"/>
+                                    <outlet property="delegate" destination="fBe-r3-nsw" id="Og9-U5-FHr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="b0z-kt-jUU"/>
+                        <constraints>
+                            <constraint firstItem="jDU-jC-9DA" firstAttribute="centerX" secondItem="0ud-uF-61C" secondAttribute="centerX" id="1NF-cv-CtM"/>
+                            <constraint firstItem="jDU-jC-9DA" firstAttribute="centerY" secondItem="0ud-uF-61C" secondAttribute="centerY" id="6Zs-kY-nH3"/>
+                            <constraint firstItem="jDU-jC-9DA" firstAttribute="width" secondItem="0ud-uF-61C" secondAttribute="width" id="uCK-YF-Pkk"/>
+                            <constraint firstItem="jDU-jC-9DA" firstAttribute="height" secondItem="0ud-uF-61C" secondAttribute="height" id="vyJ-cW-6Yk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZVh-Qb-i1k"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="Hsj-lt-466"/>
+                    <navigationItem key="navigationItem" title="Settings" id="9Y1-F3-Stj"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qZQ-Gy-4Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cjL-6C-zV5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-865" y="221"/>
+            <point key="canvasLocation" x="-801" y="221"/>
         </scene>
     </scenes>
     <resources>
