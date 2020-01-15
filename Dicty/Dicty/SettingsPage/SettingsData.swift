@@ -16,6 +16,7 @@ struct Settings {
 struct SettingField {
     var title: String
     var icon: UIImage?
+//    var palettes = [UIImage]?
 }
 
 extension Settings {
