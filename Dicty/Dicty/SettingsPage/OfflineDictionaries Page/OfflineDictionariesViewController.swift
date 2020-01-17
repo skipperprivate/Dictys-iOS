@@ -14,6 +14,7 @@ class OfflineDictionariesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -21,8 +22,6 @@ class OfflineDictionariesViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -32,15 +31,22 @@ class OfflineDictionariesViewController: UITableViewController {
         return dictionaries.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OfflineDictionaryCell", for: indexPath) as! OfflineDictionariesCell
 
-        // Configure the cell...
+        cell.setCell(title: dictionaries[indexPath.row].rawValue)
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Unselect the row
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // Call for function
+        let cell = tableView.cellForRow(at: indexPath) as! OfflineDictionariesCell
+        cell.iconAppear()
+    }
 
     /*
     // Override to support conditional editing of the table view.

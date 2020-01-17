@@ -19,6 +19,7 @@
 		C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */; };
 		C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210EC923CB939D00630147 /* SettingsView.swift */; };
 		C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210ECB23CB946B00630147 /* SettingsData.swift */; };
+		C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940602123D07AB300984853 /* OfflineDictionariesCell.swift */; };
 		C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B245C23CF32DA003D64E3 /* SettingsCell.swift */; };
 		C98B246523CF4B97003D64E3 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246423CF4B97003D64E3 /* LanguagesViewController.swift */; };
 		C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246623CF4CDA003D64E3 /* LanguagesData.swift */; };
@@ -62,6 +63,7 @@
 		C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		C9210EC923CB939D00630147 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C9210ECB23CB946B00630147 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
+		C940602123D07AB300984853 /* OfflineDictionariesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesCell.swift; sourceTree = "<group>"; };
 		C98B245C23CF32DA003D64E3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C98B246423CF4B97003D64E3 /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		C98B246623CF4CDA003D64E3 /* LanguagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
@@ -156,6 +158,16 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		C940601E23D0796400984853 /* OfflineDictionaries Page */ = {
+			isa = PBXGroup;
+			children = (
+				C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */,
+				C940602123D07AB300984853 /* OfflineDictionariesCell.swift */,
+				C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */,
+			);
+			path = "OfflineDictionaries Page";
+			sourceTree = "<group>";
+		};
 		C98B245E23CF3D2C003D64E3 /* SettingsPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,9 +175,8 @@
 				C98B245C23CF32DA003D64E3 /* SettingsCell.swift */,
 				C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */,
 				C9210ECB23CB946B00630147 /* SettingsData.swift */,
-				C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */,
+				C940601E23D0796400984853 /* OfflineDictionaries Page */,
 				C98B246423CF4B97003D64E3 /* LanguagesViewController.swift */,
-				C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */,
 				C98B246623CF4CDA003D64E3 /* LanguagesData.swift */,
 			);
 			path = SettingsPage;
@@ -307,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
+				C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */,
 				C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */,
 				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
