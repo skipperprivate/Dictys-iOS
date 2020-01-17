@@ -32,6 +32,7 @@ class OfflineDictionariesCell: UITableViewCell {
     }
 }
 
+/// Rotation animation
 extension UIImageView {
     private static let kRotationAnimationKey = "rotationanimationkey"
     
@@ -58,7 +59,7 @@ extension UIImageView {
 
 
 
-
+/// Some custom animations
 extension UIImageView {
     func rotate() {
         let rotate = CASpringAnimation(keyPath: "transform.rotation.z")
