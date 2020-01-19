@@ -72,7 +72,16 @@ extension DictysViewController: UITableViewDataSource,  UITableViewDelegate {
         // Unselect the row
         tableView.deselectRow(at: indexPath, animated: false)
         
-        print("tap on dicty")
+        let storyboard = UIStoryboard(name: "Dicty", bundle: Bundle.main)
+        
+        guard let dictyViewController = storyboard.instantiateViewController(withIdentifier: "DictyViewController") as? DictyViewController else {
+            print("failed")
+            return
+        }
+       
+        dictyViewController.words = Letter.tempWords
+        self.navigationController?.pushViewController(dictyViewController, animated: true)
+        
         
 //        let dicty = dictys[indexPath.section].dictys[indexPath.row]
 //        let dictyViewController = DictyViewController(dicty: dicty)

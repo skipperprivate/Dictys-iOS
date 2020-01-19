@@ -22,6 +22,7 @@ class DictyCell: UITableViewCell {
         self.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5).cgColor
         
         // Woopdi-woop margin magic
+        // https://stackoverflow.com/questions/19640050/custom-uitableviewcell-add-margin-between-each-cell
 //        self.backgroundColor = UIColor.clear
 //        self.contentView.backgroundColor = UIColor.clear
         

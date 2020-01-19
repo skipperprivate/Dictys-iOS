@@ -2,30 +2,45 @@
 //  DictyViewController.swift
 //  Dicty
 //
-//  Created by Егор Бедов on 17/01/2020.
+//  Created by Егор Бедов on 19/01/2020.
 //  Copyright © 2020 Егор Бедов. All rights reserved.
 //
 
 import UIKit
 
-class DictyViewController: UIViewController {
-    let dicty: Dicty
+class DictyViewController: UITableViewController {
     
-    init(dicty: Dicty) {
-        self.dicty = dicty
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+    var words = [Letter]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
     }
-
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return words.count
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return words[section].words.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return words[section].letter
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "WordCell", for: indexPath) as! WordCell
+        
+        cell.originalLabel.text = words[indexPath.section].words[indexPath.row].originalWord
+        cell.translatedLabel.text = words[indexPath.section].words[indexPath.row].translatedWord
+        
+        return cell
+    }
+    
+    // https://developer.apple.com/documentation/uikit/uisearchbar
+    // https://stackoverflow.com/questions/32004557/swipe-able-table-view-cell-in-ios-9
+    
 
     /*
     // MARK: - Navigation

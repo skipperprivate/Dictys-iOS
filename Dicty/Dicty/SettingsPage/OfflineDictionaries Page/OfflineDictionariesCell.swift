@@ -30,6 +30,9 @@ class OfflineDictionariesCell: UITableViewCell {
         })
 //        cellIcon.stopRotating()
     }
+    
+    // https://developer.apple.com/documentation/uikit/uiactivityindicatorview
+    // https://www.youtube.com/watch?v=_EZINiWExLI
 }
 
 /// Rotation animation

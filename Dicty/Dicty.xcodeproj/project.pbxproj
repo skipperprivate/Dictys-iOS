@@ -10,8 +10,6 @@
 		C909132523D181B50017E9FA /* DictyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132423D181B50017E9FA /* DictyCell.swift */; };
 		C909132723D182A80017E9FA /* DictysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132623D182A80017E9FA /* DictysViewController.swift */; };
 		C909132B23D18CF00017E9FA /* DictysData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132A23D18CF00017E9FA /* DictysData.swift */; };
-		C909133023D1C43E0017E9FA /* DictyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132E23D1C43E0017E9FA /* DictyViewController.swift */; };
-		C909133123D1C43E0017E9FA /* DictyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C909132F23D1C43E0017E9FA /* DictyViewController.xib */; };
 		C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF86623CB8D3400B6D192 /* AppDelegate.swift */; };
 		C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86A23CB8D3400B6D192 /* Main.storyboard */; };
 		C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86D23CB8D3500B6D192 /* Assets.xcassets */; };
@@ -25,6 +23,10 @@
 		C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210EC923CB939D00630147 /* SettingsView.swift */; };
 		C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210ECB23CB946B00630147 /* SettingsData.swift */; };
 		C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940602123D07AB300984853 /* OfflineDictionariesCell.swift */; };
+		C979832A23D4F3B7005DC00F /* Dicty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C979832923D4F3B7005DC00F /* Dicty.storyboard */; };
+		C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979832B23D4F3E2005DC00F /* DictyViewController.swift */; };
+		C979832E23D4F79F005DC00F /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979832D23D4F79F005DC00F /* WordCell.swift */; };
+		C979833023D4F951005DC00F /* WordData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979832F23D4F951005DC00F /* WordData.swift */; };
 		C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B245C23CF32DA003D64E3 /* SettingsCell.swift */; };
 		C98B246523CF4B97003D64E3 /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246423CF4B97003D64E3 /* LanguagesViewController.swift */; };
 		C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246623CF4CDA003D64E3 /* LanguagesData.swift */; };
@@ -53,8 +55,6 @@
 		C909132423D181B50017E9FA /* DictyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyCell.swift; sourceTree = "<group>"; };
 		C909132623D182A80017E9FA /* DictysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysViewController.swift; sourceTree = "<group>"; };
 		C909132A23D18CF00017E9FA /* DictysData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysData.swift; sourceTree = "<group>"; };
-		C909132E23D1C43E0017E9FA /* DictyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyViewController.swift; sourceTree = "<group>"; };
-		C909132F23D1C43E0017E9FA /* DictyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DictyViewController.xib; sourceTree = "<group>"; };
 		C90AF86323CB8D3400B6D192 /* Dicty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF86623CB8D3400B6D192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90AF86B23CB8D3400B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +74,10 @@
 		C9210EC923CB939D00630147 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C9210ECB23CB946B00630147 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
 		C940602123D07AB300984853 /* OfflineDictionariesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesCell.swift; sourceTree = "<group>"; };
+		C979832923D4F3B7005DC00F /* Dicty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dicty.storyboard; sourceTree = "<group>"; };
+		C979832B23D4F3E2005DC00F /* DictyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyViewController.swift; sourceTree = "<group>"; };
+		C979832D23D4F79F005DC00F /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		C979832F23D4F951005DC00F /* WordData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordData.swift; sourceTree = "<group>"; };
 		C98B245C23CF32DA003D64E3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C98B246423CF4B97003D64E3 /* LanguagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		C98B246623CF4CDA003D64E3 /* LanguagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
@@ -121,8 +125,10 @@
 		C909133223D1C4410017E9FA /* Dicty page */ = {
 			isa = PBXGroup;
 			children = (
-				C909132E23D1C43E0017E9FA /* DictyViewController.swift */,
-				C909132F23D1C43E0017E9FA /* DictyViewController.xib */,
+				C979832923D4F3B7005DC00F /* Dicty.storyboard */,
+				C979832D23D4F79F005DC00F /* WordCell.swift */,
+				C979832F23D4F951005DC00F /* WordData.swift */,
+				C979832B23D4F3E2005DC00F /* DictyViewController.swift */,
 			);
 			path = "Dicty page";
 			sourceTree = "<group>";
@@ -321,7 +327,7 @@
 				C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */,
 				C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */,
 				C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */,
-				C909133123D1C43E0017E9FA /* DictyViewController.xib in Resources */,
+				C979832A23D4F3B7005DC00F /* Dicty.storyboard in Resources */,
 				C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */,
 				C90AF89623CB8E3100B6D192 /* NewWord.storyboard in Resources */,
 				C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */,
@@ -357,9 +363,11 @@
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
 				C909132523D181B50017E9FA /* DictyCell.swift in Sources */,
 				C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */,
+				C979833023D4F951005DC00F /* WordData.swift in Sources */,
 				C98B246523CF4B97003D64E3 /* LanguagesViewController.swift in Sources */,
+				C979832E23D4F79F005DC00F /* WordCell.swift in Sources */,
 				C909132B23D18CF00017E9FA /* DictysData.swift in Sources */,
-				C909133023D1C43E0017E9FA /* DictyViewController.swift in Sources */,
+				C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */,
 				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
 				C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */,
 			);
