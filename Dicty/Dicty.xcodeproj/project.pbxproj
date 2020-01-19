@@ -10,6 +10,8 @@
 		C909132523D181B50017E9FA /* DictyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132423D181B50017E9FA /* DictyCell.swift */; };
 		C909132723D182A80017E9FA /* DictysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132623D182A80017E9FA /* DictysViewController.swift */; };
 		C909132B23D18CF00017E9FA /* DictysData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132A23D18CF00017E9FA /* DictysData.swift */; };
+		C909133023D1C43E0017E9FA /* DictyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132E23D1C43E0017E9FA /* DictyViewController.swift */; };
+		C909133123D1C43E0017E9FA /* DictyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C909132F23D1C43E0017E9FA /* DictyViewController.xib */; };
 		C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF86623CB8D3400B6D192 /* AppDelegate.swift */; };
 		C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86A23CB8D3400B6D192 /* Main.storyboard */; };
 		C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86D23CB8D3500B6D192 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		C909132423D181B50017E9FA /* DictyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyCell.swift; sourceTree = "<group>"; };
 		C909132623D182A80017E9FA /* DictysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysViewController.swift; sourceTree = "<group>"; };
 		C909132A23D18CF00017E9FA /* DictysData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysData.swift; sourceTree = "<group>"; };
+		C909132E23D1C43E0017E9FA /* DictyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyViewController.swift; sourceTree = "<group>"; };
+		C909132F23D1C43E0017E9FA /* DictyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DictyViewController.xib; sourceTree = "<group>"; };
 		C90AF86323CB8D3400B6D192 /* Dicty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF86623CB8D3400B6D192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C90AF86B23CB8D3400B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -109,8 +113,18 @@
 				C909132423D181B50017E9FA /* DictyCell.swift */,
 				C909132623D182A80017E9FA /* DictysViewController.swift */,
 				C909132A23D18CF00017E9FA /* DictysData.swift */,
+				C909133223D1C4410017E9FA /* Dicty page */,
 			);
 			path = Dictys;
+			sourceTree = "<group>";
+		};
+		C909133223D1C4410017E9FA /* Dicty page */ = {
+			isa = PBXGroup;
+			children = (
+				C909132E23D1C43E0017E9FA /* DictyViewController.swift */,
+				C909132F23D1C43E0017E9FA /* DictyViewController.xib */,
+			);
+			path = "Dicty page";
 			sourceTree = "<group>";
 		};
 		C90AF85A23CB8D3400B6D192 = {
@@ -307,6 +321,7 @@
 				C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */,
 				C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */,
 				C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */,
+				C909133123D1C43E0017E9FA /* DictyViewController.xib in Resources */,
 				C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */,
 				C90AF89623CB8E3100B6D192 /* NewWord.storyboard in Resources */,
 				C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */,
@@ -344,6 +359,7 @@
 				C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */,
 				C98B246523CF4B97003D64E3 /* LanguagesViewController.swift in Sources */,
 				C909132B23D18CF00017E9FA /* DictysData.swift in Sources */,
+				C909133023D1C43E0017E9FA /* DictyViewController.swift in Sources */,
 				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
 				C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */,
 			);

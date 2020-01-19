@@ -17,11 +17,18 @@ class DictyCell: UITableViewCell {
         cellIcon.image = icon
         celllabel.text = title
         
-        self.backgroundColor = UIColor.white
         self.layer.cornerRadius = self.frame.height / 2
         self.layer.borderWidth = 0.5
         self.layer.borderColor = UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5).cgColor
-//        self.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 20, bottom: 20, trailing: 20)
+        
+        // Woopdi-woop margin magic
+//        self.backgroundColor = UIColor.clear
+//        self.contentView.backgroundColor = UIColor.clear
+        
+//        let marginView = UIView(frame: CGRect(x: self.frame.minX, y: self.frame.minY, width: self.bounds.width, height: self.frame.height - 5))
+//        marginView.backgroundColor = UIColor.yellow
+//        self.addSubview(marginView)
+//        self.sendSubviewToBack(marginView)
     }
     
     func fillIcon() {

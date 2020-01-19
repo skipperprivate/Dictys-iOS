@@ -17,12 +17,13 @@ class DictysViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        self.tableView.backgroundColor = UIColor.black
         
         customizeNavigationItem()
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.view.backgroundColor = UIColor.gray
+//        self.view.backgroundColor = UIColor.black
     }
     
     func customizeNavigationItem() {
@@ -67,6 +68,15 @@ extension DictysViewController: UITableViewDataSource,  UITableViewDelegate {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // Unselect the row
+        tableView.deselectRow(at: indexPath, animated: false)
+        
+        print("tap on dicty")
+        
+//        let dicty = dictys[indexPath.section].dictys[indexPath.row]
+//        let dictyViewController = DictyViewController(dicty: dicty)
+//        present(dictyViewController, animated: true, completion: nil)
+    }
     
 }
