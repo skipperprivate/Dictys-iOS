@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qTV-tR-JCr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Dictys-->
+        <scene sceneID="C3I-rN-Lsx">
+            <objects>
+                <navigationController id="qTV-tR-JCr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Dictys" image="FolderIcon" id="vRs-a7-kgU"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oja-C3-RBD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5ne-b0-HCY" kind="relationship" relationship="rootViewController" id="doO-ml-tiq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVP-MM-7MC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1286" y="220"/>
+        </scene>
+        <!--Dictys-->
+        <scene sceneID="bgZ-6B-q7i">
+            <objects>
+                <tableViewController id="5ne-b0-HCY" customClass="DictysViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Vqs-oP-K17">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DictyCell" rowHeight="49" id="0jF-tp-EeP" customClass="DictyCell" customModule="Dicty" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="55.5" width="414" height="49"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0jF-tp-EeP" id="Nta-1I-Jb5">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="48.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSz-bS-t4q">
+                                            <rect key="frame" x="53" y="14" width="315" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ov0-Da-lVc">
+                                            <rect key="frame" x="20" y="14" width="21" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="21" id="lPO-JG-qXK"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Ov0-Da-lVc" firstAttribute="centerY" secondItem="Nta-1I-Jb5" secondAttribute="centerY" id="282-zt-QrW"/>
+                                        <constraint firstItem="Ov0-Da-lVc" firstAttribute="leading" secondItem="Nta-1I-Jb5" secondAttribute="leading" constant="20" id="4KH-0y-U9n"/>
+                                        <constraint firstItem="Ov0-Da-lVc" firstAttribute="height" secondItem="sSz-bS-t4q" secondAttribute="height" id="Vmy-4g-AV4"/>
+                                        <constraint firstItem="sSz-bS-t4q" firstAttribute="leading" secondItem="Ov0-Da-lVc" secondAttribute="trailing" constant="12" id="ZVN-g3-R4E"/>
+                                        <constraint firstItem="sSz-bS-t4q" firstAttribute="centerY" secondItem="Ov0-Da-lVc" secondAttribute="centerY" id="fxb-ji-0Ry"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sSz-bS-t4q" secondAttribute="trailing" id="r3M-cC-xZP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cellIcon" destination="Ov0-Da-lVc" id="YG5-3N-Tje"/>
+                                    <outlet property="celllabel" destination="sSz-bS-t4q" id="pDx-5B-z7Z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="5ne-b0-HCY" id="tlz-cP-Ia9"/>
+                            <outlet property="delegate" destination="5ne-b0-HCY" id="1y8-Fu-E4R"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dictys" id="75a-9K-XHf">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="35T-fm-ohS"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="HFQ-Sa-cja"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leftNavBarButton" destination="35T-fm-ohS" id="NNC-MW-n2j"/>
+                        <outlet property="rightNavBarButton" destination="HFQ-Sa-cja" id="U5K-ZI-Th8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uw8-b6-fnD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-432" y="220"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FolderIcon" width="30" height="30"/>
+    </resources>
+</document>

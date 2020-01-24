@@ -25,3 +25,5 @@ class WordCell: UITableViewCell {
     }
 
 }
+
+// https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells
