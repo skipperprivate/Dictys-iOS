@@ -28,10 +28,10 @@
             </objects>
             <point key="canvasLocation" x="-491" y="-548"/>
         </scene>
-        <!--NewWord-->
+        <!--MainPage-->
         <scene sceneID="p0K-AJ-S2l">
             <objects>
-                <viewControllerPlaceholder storyboardName="NewWord" id="S9b-qX-TYT" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="MainPage" id="S9b-qX-TYT" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="qNC-27-DcK"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ElQ-Dz-5D1" userLabel="First Responder" sceneMemberID="firstResponder"/>
