@@ -9,6 +9,7 @@ target 'Dicty' do
   pod 'AWSTranslate', '~> 2.6.19'
   pod 'Sourcery'
   pod 'Eureka'
+  pod 'SwiftLint'
   
   target 'DictyTests' do
     inherit! :search_paths
