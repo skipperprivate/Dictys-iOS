@@ -11,7 +11,7 @@ import UIKit
 class LanguagesViewController: UITableViewController {
     
     let languages = Languages.supportedLanguages
-    var selectedLanguage = Languages.English
+    var selectedLanguage = Languages.english
     var selectedRow = 0
 
     override func viewDidLoad() {

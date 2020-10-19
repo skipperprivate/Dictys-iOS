@@ -9,13 +9,13 @@
 import Foundation
 
 enum OfflineDictionaries: String {
-    case English = "English"
-    case German  = "German"
-    case Spanish = "Spanish"
+    case english = "English"
+    case german  = "German"
+    case spanish = "Spanish"
     
     static var availableDictionaries: [OfflineDictionaries] {
-        return [.English,
-                .German,
-                .Spanish]
+        return [.english,
+                .german,
+                .spanish]
     }
 }
