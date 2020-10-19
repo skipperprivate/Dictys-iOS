@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12E46C2EFCF940B5F8439590 /* Pods_DictyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E886C3A009BD0032AA8FFC4 /* Pods_DictyTests.framework */; };
+		20E838AFA55F810A718C8C2F /* Pods_Dicty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CA1DB328955B1CF4412642B /* Pods_Dicty.framework */; };
+		815F2325EEBEE2341DAD7C0D /* Pods_Dicty_DictyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BE8ACAD3B2B425D7DC1A254 /* Pods_Dicty_DictyUITests.framework */; };
 		C909132523D181B50017E9FA /* DictyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132423D181B50017E9FA /* DictyCell.swift */; };
 		C909132723D182A80017E9FA /* DictysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132623D182A80017E9FA /* DictysViewController.swift */; };
 		C909132B23D18CF00017E9FA /* DictysData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132A23D18CF00017E9FA /* DictysData.swift */; };
@@ -34,6 +37,11 @@
 		C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246623CF4CDA003D64E3 /* LanguagesData.swift */; };
 		C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */; };
 		C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */; };
+		EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */; };
+		EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */; };
+		EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD648F253C3DE4006E46E3 /* Translator.swift */; };
+		EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */; };
+		EFFD649D253C6727006E46E3 /* AWSCredentials.stencil in Sources */ = {isa = PBXBuildFile; fileRef = EFFD649C253C6727006E46E3 /* AWSCredentials.stencil */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E886C3A009BD0032AA8FFC4 /* Pods_DictyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DictyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B14EA84AD9453384BF68749 /* Pods-Dicty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicty.release.xcconfig"; path = "Target Support Files/Pods-Dicty/Pods-Dicty.release.xcconfig"; sourceTree = "<group>"; };
+		6BE8ACAD3B2B425D7DC1A254 /* Pods_Dicty_DictyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicty_DictyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7384E2346C90743602080538 /* Pods-DictyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictyTests.release.xcconfig"; path = "Target Support Files/Pods-DictyTests/Pods-DictyTests.release.xcconfig"; sourceTree = "<group>"; };
+		7CA1DB328955B1CF4412642B /* Pods_Dicty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dicty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95598AFAACC85C03CFD0CA8A /* Pods-Dicty-DictyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicty-DictyUITests.release.xcconfig"; path = "Target Support Files/Pods-Dicty-DictyUITests/Pods-Dicty-DictyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A519BC1654647DDC048364E7 /* Pods-DictyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DictyTests.debug.xcconfig"; path = "Target Support Files/Pods-DictyTests/Pods-DictyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE0155AC3B0A7478850BB82B /* Pods-Dicty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicty.debug.xcconfig"; path = "Target Support Files/Pods-Dicty/Pods-Dicty.debug.xcconfig"; sourceTree = "<group>"; };
+		B0670637C7459E12F98B7C11 /* Pods-Dicty-DictyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dicty-DictyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dicty-DictyUITests/Pods-Dicty-DictyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C909132423D181B50017E9FA /* DictyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyCell.swift; sourceTree = "<group>"; };
 		C909132623D182A80017E9FA /* DictysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysViewController.swift; sourceTree = "<group>"; };
 		C909132A23D18CF00017E9FA /* DictysData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysData.swift; sourceTree = "<group>"; };
@@ -87,6 +104,11 @@
 		C98B246623CF4CDA003D64E3 /* LanguagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
 		C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesViewController.swift; sourceTree = "<group>"; };
 		C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesData.swift; sourceTree = "<group>"; };
+		EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCredentials.generated.swift; sourceTree = "<group>"; };
+		EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		EFFD648F253C3DE4006E46E3 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
+		EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSTranslator.swift; sourceTree = "<group>"; };
+		EFFD649C253C6727006E46E3 /* AWSCredentials.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AWSCredentials.stencil; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20E838AFA55F810A718C8C2F /* Pods_Dicty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E46C2EFCF940B5F8439590 /* Pods_DictyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +132,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815F2325EEBEE2341DAD7C0D /* Pods_Dicty_DictyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0876B4D98A4732A96988A187 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CA1DB328955B1CF4412642B /* Pods_Dicty.framework */,
+				6BE8ACAD3B2B425D7DC1A254 /* Pods_Dicty_DictyUITests.framework */,
+				2E886C3A009BD0032AA8FFC4 /* Pods_DictyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C62AA80A71D3C22BF110EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE0155AC3B0A7478850BB82B /* Pods-Dicty.debug.xcconfig */,
+				6B14EA84AD9453384BF68749 /* Pods-Dicty.release.xcconfig */,
+				B0670637C7459E12F98B7C11 /* Pods-Dicty-DictyUITests.debug.xcconfig */,
+				95598AFAACC85C03CFD0CA8A /* Pods-Dicty-DictyUITests.release.xcconfig */,
+				A519BC1654647DDC048364E7 /* Pods-DictyTests.debug.xcconfig */,
+				7384E2346C90743602080538 /* Pods-DictyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C909132323D181990017E9FA /* DictysPage */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +192,8 @@
 				C90AF87A23CB8D3500B6D192 /* DictyTests */,
 				C90AF88523CB8D3500B6D192 /* DictyUITests */,
 				C90AF86423CB8D3400B6D192 /* Products */,
+				B6C62AA80A71D3C22BF110EB /* Pods */,
+				0876B4D98A4732A96988A187 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +210,7 @@
 		C90AF86523CB8D3400B6D192 /* Dicty */ = {
 			isa = PBXGroup;
 			children = (
+				EFFD648E253C3DD8006E46E3 /* Translator */,
 				C909132323D181990017E9FA /* DictysPage */,
 				C90AF89723CB8E3D00B6D192 /* Storyboards */,
 				C90AF86623CB8D3400B6D192 /* AppDelegate.swift */,
@@ -167,6 +218,7 @@
 				C90AF86D23CB8D3500B6D192 /* Assets.xcassets */,
 				C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */,
 				C90AF87223CB8D3500B6D192 /* Info.plist */,
+				EFFD6469253C3A82006E46E3 /* TranslateSimplePage */,
 				C98B245E23CF3D2C003D64E3 /* SettingsPage */,
 			);
 			path = Dicty;
@@ -225,6 +277,25 @@
 			path = SettingsPage;
 			sourceTree = "<group>";
 		};
+		EFFD6469253C3A82006E46E3 /* TranslateSimplePage */ = {
+			isa = PBXGroup;
+			children = (
+				EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */,
+			);
+			path = TranslateSimplePage;
+			sourceTree = "<group>";
+		};
+		EFFD648E253C3DD8006E46E3 /* Translator */ = {
+			isa = PBXGroup;
+			children = (
+				EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */,
+				EFFD648F253C3DE4006E46E3 /* Translator.swift */,
+				EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */,
+				EFFD649C253C6727006E46E3 /* AWSCredentials.stencil */,
+			);
+			path = Translator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90AF88B23CB8D3500B6D192 /* Build configuration list for PBXNativeTarget "Dicty" */;
 			buildPhases = (
+				E9252E1AAB7E0A7A93030576 /* [CP] Check Pods Manifest.lock */,
+				EFFD64A4253C7064006E46E3 /* Run Script */,
 				C90AF85F23CB8D3400B6D192 /* Sources */,
 				C90AF86023CB8D3400B6D192 /* Frameworks */,
 				C90AF86123CB8D3400B6D192 /* Resources */,
+				E6EB309F5A889E879721FEEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90AF88E23CB8D3500B6D192 /* Build configuration list for PBXNativeTarget "DictyTests" */;
 			buildPhases = (
+				D5D2A3863546250FA1608889 /* [CP] Check Pods Manifest.lock */,
 				C90AF87323CB8D3500B6D192 /* Sources */,
 				C90AF87423CB8D3500B6D192 /* Frameworks */,
 				C90AF87523CB8D3500B6D192 /* Resources */,
@@ -267,9 +342,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C90AF89123CB8D3500B6D192 /* Build configuration list for PBXNativeTarget "DictyUITests" */;
 			buildPhases = (
+				A030E497EFE16BC9F34C1964 /* [CP] Check Pods Manifest.lock */,
 				C90AF87E23CB8D3500B6D192 /* Sources */,
 				C90AF87F23CB8D3500B6D192 /* Frameworks */,
 				C90AF88023CB8D3500B6D192 /* Resources */,
+				1D99B5017DBA7AC21818B062 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +433,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D99B5017DBA7AC21818B062 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicty-DictyUITests/Pods-Dicty-DictyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicty-DictyUITests/Pods-Dicty-DictyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dicty-DictyUITests/Pods-Dicty-DictyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A030E497EFE16BC9F34C1964 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dicty-DictyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5D2A3863546250FA1608889 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DictyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6EB309F5A889E879721FEEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicty/Pods-Dicty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dicty/Pods-Dicty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dicty/Pods-Dicty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9252E1AAB7E0A7A93030576 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dicty-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFFD64A4253C7064006E46E3 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/zsh;
+			shellScript = "source ~/.zshrc\n\n$PODS_ROOT/Sourcery/bin/sourcery --templates $SOURCE_ROOT/Dicty/Translator/AWSCredentials.stencil --sources $SOURCE_ROOT --output $SOURCE_ROOT/Dicty/Translator --args accessKey=$AWS_ACCESS_KEY_ID,secretKey=$AWS_SECRET_ACCESS_KEY\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C90AF85F23CB8D3400B6D192 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -366,7 +564,12 @@
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
 				C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */,
 				C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */,
+				EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */,
+				EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */,
+				EFFD649D253C6727006E46E3 /* AWSCredentials.stencil in Sources */,
 				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
+				EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */,
+				EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */,
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
 				C909132523D181B50017E9FA /* DictyCell.swift in Sources */,
 				C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */,
@@ -566,17 +769,18 @@
 		};
 		C90AF88C23CB8D3500B6D192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE0155AC3B0A7478850BB82B /* Pods-Dicty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UVLA94J57;
+				DEVELOPMENT_TEAM = G2N26SVG96;
 				INFOPLIST_FILE = Dicty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = egogoger.Dicty;
+				PRODUCT_BUNDLE_IDENTIFIER = dicty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,17 +789,18 @@
 		};
 		C90AF88D23CB8D3500B6D192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B14EA84AD9453384BF68749 /* Pods-Dicty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UVLA94J57;
+				DEVELOPMENT_TEAM = G2N26SVG96;
 				INFOPLIST_FILE = Dicty/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = egogoger.Dicty;
+				PRODUCT_BUNDLE_IDENTIFIER = dicty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,6 +809,7 @@
 		};
 		C90AF88F23CB8D3500B6D192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A519BC1654647DDC048364E7 /* Pods-DictyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -625,6 +831,7 @@
 		};
 		C90AF89023CB8D3500B6D192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7384E2346C90743602080538 /* Pods-DictyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -646,6 +853,7 @@
 		};
 		C90AF89223CB8D3500B6D192 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0670637C7459E12F98B7C11 /* Pods-Dicty-DictyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -666,6 +874,7 @@
 		};
 		C90AF89323CB8D3500B6D192 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95598AFAACC85C03CFD0CA8A /* Pods-Dicty-DictyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
