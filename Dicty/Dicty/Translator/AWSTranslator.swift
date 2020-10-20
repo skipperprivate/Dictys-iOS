@@ -1,21 +1,20 @@
 //  Copyright © 2020 Dicty
 
-import Foundation
 import AWSTranslate
 
 class AWSTranslator: Translator {
-  
   let credentialsProvider: AWSStaticCredentialsProvider
   let configuration: AWSServiceConfiguration
   let translateClient: AWSTranslate
-  
+
   init() {
-    self.credentialsProvider = AWSStaticCredentialsProvider(accessKey: AWSCredentials.shared.accessKey, secretKey: AWSCredentials.shared.secretKey)
+    self.credentialsProvider = AWSStaticCredentialsProvider(accessKey: AWSCredentials.shared.accessKey,
+                                                            secretKey: AWSCredentials.shared.secretKey)
     self.configuration = AWSServiceConfiguration(region: .USEast2, credentialsProvider: credentialsProvider)
     AWSServiceManager.default().defaultServiceConfiguration = configuration
     self.translateClient = AWSTranslate.default()
   }
-  
+
   func translatePhrase(phrase: String, sourceLang: TranslatorSupportedLanguage, targetLang: TranslatorSupportedLanguage,
                        callback: @escaping (String) -> Void) {
     let translateRequest = AWSTranslateTranslateTextRequest()
@@ -23,7 +22,7 @@ class AWSTranslator: Translator {
     translateRequest?.targetLanguageCode = targetLang.rawValue
     translateRequest?.text = phrase
     
-    let translateCallback: (AWSTranslateTranslateTextResponse?, Error?) -> Void = { (response, error) in
+    let translateCallback: (AWSTranslateTranslateTextResponse?, Error?) -> Void = { response, error in
       guard let response = response else {
         if let error = error {
           print("Got error \(error)")
@@ -40,7 +39,7 @@ class AWSTranslator: Translator {
         print("Translated text is nil")
       }
     }
-    
+
     translateClient.translateText(translateRequest!, completionHandler: translateCallback)
   }
 }
