@@ -52,15 +52,17 @@ extension DictysCategory {
 extension Dicty {
     static var tempPersonalDictys: [Dicty] {
         return [
-        Dicty(title: "The Foghorn", icon: UIImage(named: "BookIcon"), words: ["None"]),
-        Dicty(title: "The National Geographic", icon: UIImage(named: "NewspaperIcon"), words: ["None"])]
+            Dicty(title: "The Foghorn", icon: UIImage(named: "BookIcon"), words: ["None"]),
+            Dicty(title: "The National Geographic", icon: UIImage(named: "NewspaperIcon"), words: ["None"])
+        ]
     }
 
     static var tempCommonDictys: [Dicty] {
         return [
-        Dicty(title: "Book", icon: UIImage(named: "BookIcon"), words: nil),
-        Dicty(title: "Newspaper", icon: UIImage(named: "NewspaperIcon"), words: nil),
-        Dicty(title: "Person", icon: UIImage(named: "ProfileIcon"), words: nil),
-        Dicty(title: "Worldwide", icon: UIImage(named: "GlobeIcon"), words: nil)]
+            Dicty(title: "Book", icon: UIImage(named: "BookIcon"), words: nil),
+            Dicty(title: "Newspaper", icon: UIImage(named: "NewspaperIcon"), words: nil),
+            Dicty(title: "Person", icon: UIImage(named: "ProfileIcon"), words: nil),
+            Dicty(title: "Worldwide", icon: UIImage(named: "GlobeIcon"), words: nil)
+        ]
     }
 }
