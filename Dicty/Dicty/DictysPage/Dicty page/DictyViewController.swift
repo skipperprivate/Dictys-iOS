@@ -24,11 +24,14 @@ class DictyViewController: UITableViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     self.navigationItem.title = name
-    self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil), animated: true)    // TODO: add action
-    
+    self.navigationItem.setRightBarButton(UIBarButtonItem(barButtonSystemItem: .add,
+                                                          target: self,
+                                                          action: nil),
+                                          animated: true)    // TODO: add action
+
     // Remove empty cells at the bottom
     self.tableView.tableFooterView = UIView(frame: CGRect.zero)
-    
+
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
     // Add searchbar to navigation since Interface Builder can't

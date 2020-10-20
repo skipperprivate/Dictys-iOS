@@ -9,8 +9,8 @@
 import UIKit
 
 class MainPageDictyCell: UICollectionViewCell {
-    @IBOutlet weak var cellIcon: UIImageView!
-    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet var cellIcon: UIImageView!
+    @IBOutlet var cellLabel: UILabel!
 
     func customizeCell(icon: UIImage, title: String) {
         cellIcon.image = icon

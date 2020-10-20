@@ -9,8 +9,8 @@
 import UIKit
 
 class DictyCell: UITableViewCell {
-  @IBOutlet weak var cellIcon: UIImageView!
-  @IBOutlet weak var celllabel: UILabel!
+  @IBOutlet var cellIcon: UIImageView!
+  @IBOutlet var celllabel: UILabel!
 
   func customizeCell(icon: UIImage, title: String) {
     cellIcon.image = icon

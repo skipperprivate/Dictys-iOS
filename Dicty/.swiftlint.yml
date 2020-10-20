@@ -42,15 +42,15 @@ opt_in_rules:
   - nimble_operator
   - nslocalizedstring_key
   - number_separator
-  - object_literal
+  #- object_literal
   - operator_usage_whitespace
   - overridden_super_call
   - override_in_extension
   - pattern_matching_keywords
   - prefer_self_type_over_type_of_self
   - private_action
-  - private_outlet
-  - prohibited_interface_builder
+  #- private_outlet
+  #- prohibited_interface_builder
   - prohibited_super_call
   - quick_discouraged_call
   - quick_discouraged_focused_test
@@ -74,6 +74,16 @@ opt_in_rules:
   - xct_specific_matcher
   - yoda_condition
 
+file_header:
+required_pattern: |
+                  \/\/
+                  \/\/  .*?\.swift
+                  \/\/  SwiftLint
+                  \/\/
+                  \/\/  Created by .*? on \d{1,2}\/\d{1,2}\/\d{2}\.
+                  \/\/  Copyright © \d{4} Realm\. All rights reserved\.
+                  \/\/
+
 identifier_name:
   excluded:
     - id
@@ -86,6 +96,8 @@ file_name:
     - TestHelpers.swift
     - shim.swift
     - AutomaticRuleTests.generated.swift
+
+line_length: 150
 
 custom_rules:
   rule_id:

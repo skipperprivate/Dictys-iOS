@@ -9,9 +9,9 @@
 import UIKit
 
 class SettingsCell: UITableViewCell {
-    @IBOutlet weak var settingIcon: UIImageView!
-    @IBOutlet weak var settingLabel: UILabel!
-    
+    @IBOutlet var settingIcon: UIImageView!
+    @IBOutlet var settingLabel: UILabel!
+
     func setSettingCell(image: UIImage, title: String) {
         settingIcon.image = image
         settingIcon.setImageColor(color: UIColor.green)

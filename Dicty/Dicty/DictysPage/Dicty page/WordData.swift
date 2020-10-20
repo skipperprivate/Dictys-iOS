@@ -11,7 +11,7 @@ import Foundation
 struct Word {
     var originalWord: String
     var translatedWord: String
-    
+
 //    init(oWord: String, tWord: String) {
 //        self.originalWord = oWord
 //        self.translatedWord = tWord
@@ -30,7 +30,9 @@ extension Letter {
                 Word(originalWord: "Assign", translatedWord: "Присвоить"),
                 Word(originalWord: "Attempt", translatedWord: "Попытка")]),
             Letter(letter: "W", words: [
-                Word(originalWord: "Word", translatedWord: "Слово")])]
+                Word(originalWord: "Word", translatedWord: "Слово")
+            ])
+        ]
     }
 }
 

@@ -21,7 +21,7 @@ class AWSTranslator: Translator {
     translateRequest?.sourceLanguageCode = sourceLang.rawValue
     translateRequest?.targetLanguageCode = targetLang.rawValue
     translateRequest?.text = phrase
-    
+
     let translateCallback: (AWSTranslateTranslateTextResponse?, Error?) -> Void = { response, error in
       guard let response = response else {
         if let error = error {

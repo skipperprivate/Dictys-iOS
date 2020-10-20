@@ -26,7 +26,7 @@ extension Settings {
                      fields: [SettingField(title: "Interface language",
                                            icon: UIImage(named: "GlobeIcon")),
                               SettingField(title: "Offline dictionaries",
-                                           icon: UIImage(named: "DownloadsIcon")),]),
+                                           icon: UIImage(named: "DownloadsIcon"))]),
             Settings(title: "Personal",
                      fields: [SettingField(title: "Profile",
                                            icon: UIImage(named: "ProfileIcon")),

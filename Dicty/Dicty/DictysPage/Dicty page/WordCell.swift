@@ -9,9 +9,8 @@
 import UIKit
 
 class WordCell: UITableViewCell {
-    
-    @IBOutlet weak var originalLabel: UILabel!
-    @IBOutlet weak var translatedLabel: UILabel!
+    @IBOutlet var originalLabel: UILabel!
+    @IBOutlet var translatedLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,7 +22,6 @@ class WordCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
 
 // https://developer.apple.com/documentation/uikit/uifont/creating_self-sizing_table_view_cells

@@ -14,7 +14,7 @@ enum Languages: String {
   case chinese  = "🇨🇳 中文"
   case japanese = "🇯🇵 日本語"
   case ukranian = "🇺🇦 Український"
-  
+
   static var supportedLanguages: [Languages] {
     return [.english,
             .russian,

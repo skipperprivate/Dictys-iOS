@@ -9,8 +9,8 @@
 import UIKit
 
 class DictysViewController: UITableViewController {
-  @IBOutlet weak var leftNavBarButton: UIBarButtonItem!
-  @IBOutlet weak var rightNavBarButton: UIBarButtonItem!
+  @IBOutlet var leftNavBarButton: UIBarButtonItem!
+  @IBOutlet var rightNavBarButton: UIBarButtonItem!
 
   var dictys = DictysCategory.tempDictys
 

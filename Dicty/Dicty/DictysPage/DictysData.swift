@@ -13,7 +13,7 @@ struct Dicty {
     var title: String
     var icon: UIImage
     var words: [String]?
-    
+
     init(title: String, icon: UIImage?, words: [String]?) {
         self.title = title
         self.icon = icon!
@@ -35,14 +35,16 @@ extension DictysCategory {
                       words: ["Apple", "Insert"]),
                 Dicty(title: "German",
                       icon: UIImage(named: "FlagGermany"),
-                      words: ["Naturwissenshaft", "Hoff"])]),
+                      words: ["Naturwissenshaft", "Hoff"])
+            ]),
             DictysCategory(title: "Your dictys", dictys: [
                 Dicty(title: "The Foghorn",
                       icon: UIImage(named: "BookIcon"),
                       words: ["Fog", "Horn"]),
                 Dicty(title: "National Geographic",
                       icon: UIImage(named: "NewspaperIcon"),
-                      words: ["news", "paper"])])
+                      words: ["news", "paper"])
+            ])
         ]
     }
 }
@@ -53,7 +55,7 @@ extension Dicty {
         Dicty(title: "The Foghorn", icon: UIImage(named: "BookIcon"), words: ["None"]),
         Dicty(title: "The National Geographic", icon: UIImage(named: "NewspaperIcon"), words: ["None"])]
     }
-    
+
     static var tempCommonDictys: [Dicty] {
         return [
         Dicty(title: "Book", icon: UIImage(named: "BookIcon"), words: nil),

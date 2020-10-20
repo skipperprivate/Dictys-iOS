@@ -9,16 +9,15 @@
 import UIKit
 
 class OfflineDictionariesViewController: UITableViewController {
-  
   let dictionaries = OfflineDictionaries.availableDictionaries
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     self.tableView.tableFooterView = UIView(frame: CGRect.zero)
 
     // Uncomment the following line to preserve selection between presentations
     // self.clearsSelectionOnViewWillAppear = false
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem
   }
@@ -30,7 +29,7 @@ class OfflineDictionariesViewController: UITableViewController {
   override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return dictionaries.count
   }
-  
+
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "OfflineDictionaryCell", for: indexPath) as? OfflineDictionariesCell else {
       return .init()
@@ -40,7 +39,7 @@ class OfflineDictionariesViewController: UITableViewController {
 
     return cell
   }
-  
+
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     // Unselect the row
     tableView.deselectRow(at: indexPath, animated: true)
@@ -51,7 +50,7 @@ class OfflineDictionariesViewController: UITableViewController {
     }
     cell.iconAppear()
   }
-  
+
   /*
    // Override to support conditional editing of the table view.
    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -59,7 +58,7 @@ class OfflineDictionariesViewController: UITableViewController {
    return true
    }
    */
-  
+
   /*
    // Override to support editing the table view.
    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -96,5 +95,4 @@ class OfflineDictionariesViewController: UITableViewController {
    // Pass the selected object to the new view controller.
    }
    */
-
 }

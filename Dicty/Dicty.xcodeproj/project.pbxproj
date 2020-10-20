@@ -41,7 +41,6 @@
 		EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */; };
 		EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD648F253C3DE4006E46E3 /* Translator.swift */; };
 		EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */; };
-		EFFD649D253C6727006E46E3 /* AWSCredentials.stencil in Sources */ = {isa = PBXBuildFile; fileRef = EFFD649C253C6727006E46E3 /* AWSCredentials.stencil */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -585,7 +584,6 @@
 				C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */,
 				EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */,
 				EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */,
-				EFFD649D253C6727006E46E3 /* AWSCredentials.stencil in Sources */,
 				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
 				EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */,
 				EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */,

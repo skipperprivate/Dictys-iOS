@@ -9,17 +9,17 @@
 import UIKit
 
 class MainPageViewController: UIViewController {
-  @IBOutlet weak var personalDictysCV: UICollectionView!
+  @IBOutlet var personalDictysCV: UICollectionView!
 
   var personalDictys = [Dicty]()
   var commonDictys = [Dicty]()
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+
     personalDictys = Dicty.tempPersonalDictys
     commonDictys = Dicty.tempCommonDictys
-    
+
     personalDictysCV.backgroundColor = UIColor.clear
   }
 }
@@ -54,5 +54,4 @@ extension MainPageViewController: UICollectionViewDataSource, UICollectionViewDe
 
     return cell
   }
-
 }
