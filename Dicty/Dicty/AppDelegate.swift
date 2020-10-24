@@ -1,19 +1,17 @@
-//
-//  AppDelegate.swift
-//  Dicty
-//
-//  Created by Егор Бедов on 12/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
-//
+//  Copyright © 2020 Dictys
 
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
+    lazy var database = Database()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        guard let navController = window?.rootViewController as? UINavigationController, let viewController = navController.topViewController as? MainPageViewController else { return true }
+//        viewController.database = database
+        database.populate()
+
         return true
     }
 
@@ -21,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
+        database.saveContext()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -30,5 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+        database.saveContext()
     }
 }
