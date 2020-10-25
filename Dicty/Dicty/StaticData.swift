@@ -1,4 +1,6 @@
-//  Copyright © 2020 Dictys
+//
+// Copyright © 2020 Dictys. All rights reserved.
+//
 
 let supportedLanguages: [LanguageModel] = [
     LanguageModel(name: "English", id: 1),

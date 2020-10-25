@@ -1,9 +1,5 @@
 //
-//  DictysData.swift
-//  Dicty
-//
-//  Created by Егор Бедов on 17/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
+// Copyright © 2020 Dictys. All rights reserved.
 //
 
 import Foundation
@@ -31,18 +27,18 @@ extension DictysCategory {
         return [
             DictysCategory(title: "General dictys", dictys: [
                 Dicty(title: "English",
-                      icon: UIImage(named: "FlagUK"),
+                      icon: #imageLiteral(resourceName: "Enlish"),
                       words: ["Apple", "Insert"]),
                 Dicty(title: "German",
-                      icon: UIImage(named: "FlagGermany"),
+                      icon: #imageLiteral(resourceName: "German"),
                       words: ["Naturwissenshaft", "Hoff"])
             ]),
             DictysCategory(title: "Your dictys", dictys: [
                 Dicty(title: "The Foghorn",
-                      icon: UIImage(named: "BookIcon"),
+                      icon: #imageLiteral(resourceName: "BookIcon"),
                       words: ["Fog", "Horn"]),
                 Dicty(title: "National Geographic",
-                      icon: UIImage(named: "NewspaperIcon"),
+                      icon: #imageLiteral(resourceName: "NewspaperIcon"),
                       words: ["news", "paper"])
             ])
         ]
@@ -52,17 +48,17 @@ extension DictysCategory {
 extension Dicty {
     static var tempPersonalDictys: [Dicty] {
         return [
-            Dicty(title: "The Foghorn", icon: UIImage(named: "BookIcon"), words: ["None"]),
-            Dicty(title: "The National Geographic", icon: UIImage(named: "NewspaperIcon"), words: ["None"])
+            Dicty(title: "The Foghorn", icon: #imageLiteral(resourceName: "BookIcon"), words: ["None"]),
+            Dicty(title: "The National Geographic", icon: #imageLiteral(resourceName: "NewspaperIcon"), words: ["None"])
         ]
     }
 
     static var tempCommonDictys: [Dicty] {
         return [
-            Dicty(title: "Book", icon: UIImage(named: "BookIcon"), words: nil),
-            Dicty(title: "Newspaper", icon: UIImage(named: "NewspaperIcon"), words: nil),
-            Dicty(title: "Person", icon: UIImage(named: "ProfileIcon"), words: nil),
-            Dicty(title: "Worldwide", icon: UIImage(named: "GlobeIcon"), words: nil)
+            Dicty(title: "Book", icon: #imageLiteral(resourceName: "BookIcon"), words: nil),
+            Dicty(title: "Newspaper", icon: #imageLiteral(resourceName: "NewspaperIcon"), words: nil),
+            Dicty(title: "Person", icon: #imageLiteral(resourceName: "ProfileIcon"), words: nil),
+            Dicty(title: "Worldwide", icon: #imageLiteral(resourceName: "GlobeIcon"), words: nil)
         ]
     }
 }

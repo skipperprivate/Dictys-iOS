@@ -44,8 +44,15 @@
 		C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246623CF4CDA003D64E3 /* LanguagesData.swift */; };
 		C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */; };
 		C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */; };
+		EF24553025422BF100EDD792 /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */; };
+		EF8339CF2544804600D9A5F3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */; };
+		EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */; };
+		EF8904D325417A2400D5C9BD /* MonthWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */; };
+		EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */; };
 		EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */; };
-		EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */; };
+		EFF83D112542F71E0009981B /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D102542F71E0009981B /* TranslateView.swift */; };
+		EFF83D1A25430F610009981B /* MonthWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D1925430F610009981B /* MonthWordView.swift */; };
+		EFFD646B253C3ACC006E46E3 /* TranslateSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */; };
 		EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD648F253C3DE4006E46E3 /* Translator.swift */; };
 		EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */; };
 /* End PBXBuildFile section */
@@ -117,8 +124,15 @@
 		C98B246623CF4CDA003D64E3 /* LanguagesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
 		C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesViewController.swift; sourceTree = "<group>"; };
 		C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesData.swift; sourceTree = "<group>"; };
+		EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
+		EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
+		EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
+		EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthWordViewController.swift; sourceTree = "<group>"; };
+		EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCredentials.generated.swift; sourceTree = "<group>"; };
-		EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		EFF83D102542F71E0009981B /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		EFF83D1925430F610009981B /* MonthWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthWordView.swift; sourceTree = "<group>"; };
+		EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateSimpleViewController.swift; sourceTree = "<group>"; };
 		EFFD648F253C3DE4006E46E3 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSTranslator.swift; sourceTree = "<group>"; };
 		EFFD649C253C6727006E46E3 /* AWSCredentials.stencil */ = {isa = PBXFileReference; lastKnownFileType = text; path = AWSCredentials.stencil; sourceTree = "<group>"; };
@@ -223,6 +237,8 @@
 		C90AF86523CB8D3400B6D192 /* Dicty */ = {
 			isa = PBXGroup;
 			children = (
+				EF8339CD25447C4700D9A5F3 /* Extensions */,
+				EF8904CE254179A300D5C9BD /* MainPage */,
 				C9198600254390B80044E0E4 /* Models */,
 				C91985E0254373750044E0E4 /* Database */,
 				EFFD648E253C3DD8006E46E3 /* Translator */,
@@ -260,9 +276,6 @@
 		C90AF89723CB8E3D00B6D192 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C90AF89423CB8E3100B6D192 /* MainPage.storyboard */,
-				C956845323DBA75500C145D6 /* MainPageDictyCell.swift */,
-				C956845523DBA76B00C145D6 /* MainPageViewController.swift */,
 				C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */,
 			);
 			path = Storyboards;
@@ -313,10 +326,50 @@
 			path = SettingsPage;
 			sourceTree = "<group>";
 		};
+		EF8339CD25447C4700D9A5F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */,
+				EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EF8904CE254179A300D5C9BD /* MainPage */ = {
+			isa = PBXGroup;
+			children = (
+				EFF83D1825430F170009981B /* MonthWordView */,
+				EFF83D0F2542F6CE0009981B /* TranslateView */,
+				C90AF89423CB8E3100B6D192 /* MainPage.storyboard */,
+				C956845323DBA75500C145D6 /* MainPageDictyCell.swift */,
+				C956845523DBA76B00C145D6 /* MainPageViewController.swift */,
+				EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		EFF83D0F2542F6CE0009981B /* TranslateView */ = {
+			isa = PBXGroup;
+			children = (
+				EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */,
+				EFF83D102542F71E0009981B /* TranslateView.swift */,
+			);
+			path = TranslateView;
+			sourceTree = "<group>";
+		};
+		EFF83D1825430F170009981B /* MonthWordView */ = {
+			isa = PBXGroup;
+			children = (
+				EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */,
+				EFF83D1925430F610009981B /* MonthWordView.swift */,
+			);
+			path = MonthWordView;
+			sourceTree = "<group>";
+		};
 		EFFD6469253C3A82006E46E3 /* TranslateSimplePage */ = {
 			isa = PBXGroup;
 			children = (
-				EFFD646A253C3ACC006E46E3 /* TranslateViewController.swift */,
+				EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */,
 			);
 			path = TranslateSimplePage;
 			sourceTree = "<group>";
@@ -403,7 +456,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
-				ORGANIZATIONNAME = "Егор Бедов";
+				ORGANIZATIONNAME = Dictys;
 				TargetAttributes = {
 					C90AF86223CB8D3400B6D192 = {
 						CreatedOnToolsVersion = 10.3;
@@ -620,12 +673,15 @@
 				C91985FC254378BE0044E0E4 /* Dictys.xcdatamodeld in Sources */,
 				C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */,
 				C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */,
+				EFF83D1A25430F610009981B /* MonthWordView.swift in Sources */,
+				EFF83D112542F71E0009981B /* TranslateView.swift in Sources */,
 				EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */,
+				EFFD646B253C3ACC006E46E3 /* TranslateSimpleViewController.swift in Sources */,
 				C91985F6254378750044E0E4 /* Constants.swift in Sources */,
-				EFFD646B253C3ACC006E46E3 /* TranslateViewController.swift in Sources */,
 				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
 				EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */,
 				EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */,
+				EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */,
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
 				C909132523D181B50017E9FA /* DictyCell.swift in Sources */,
 				C91986142543A13E0044E0E4 /* StaticData.swift in Sources */,
@@ -635,12 +691,16 @@
 				C9198602254390CB0044E0E4 /* DictyModel.swift in Sources */,
 				C9198607254391090044E0E4 /* TranslateModel.swift in Sources */,
 				C98B246523CF4B97003D64E3 /* LanguagesViewController.swift in Sources */,
+				EF8904D325417A2400D5C9BD /* MonthWordViewController.swift in Sources */,
 				C979832E23D4F79F005DC00F /* WordCell.swift in Sources */,
+				EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */,
 				C909132B23D18CF00017E9FA /* DictysData.swift in Sources */,
 				C91986192543A9C00044E0E4 /* LanguageModel.swift in Sources */,
 				C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */,
 				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
+				EF8339CF2544804600D9A5F3 /* UIViewController+Additions.swift in Sources */,
 				C956845623DBA76B00C145D6 /* MainPageViewController.swift in Sources */,
+				EF24553025422BF100EDD792 /* SelectLanguageViewController.swift in Sources */,
 				C98B246723CF4CDA003D64E3 /* LanguagesData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,9 +894,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UVLA94J57;
+				DEVELOPMENT_TEAM = DCQKS3CH6F;
 				INFOPLIST_FILE = Dicty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -854,14 +914,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UVLA94J57;
+				DEVELOPMENT_TEAM = DCQKS3CH6F;
 				INFOPLIST_FILE = Dicty/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dicty;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dicty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

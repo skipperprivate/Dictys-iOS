@@ -31,7 +31,7 @@
         <!--Interface language-->
         <scene sceneID="RaN-QM-A6Q">
             <objects>
-                <tableViewController id="gzR-sw-1Le" customClass="LanguagesViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LanguagesViewController" id="gzR-sw-1Le" customClass="LanguagesViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5IY-V0-8kA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -334,10 +334,10 @@
             </objects>
             <point key="canvasLocation" x="-801" y="221"/>
         </scene>
-        <!--Translate View Controller-->
+        <!--Translate Simple View Controller-->
         <scene sceneID="FU3-1s-akF">
             <objects>
-                <viewController id="IZf-Ha-0oI" customClass="TranslateViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="IZf-Ha-0oI" customClass="TranslateSimpleViewController" customModule="Dicty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aK9-tr-eLO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

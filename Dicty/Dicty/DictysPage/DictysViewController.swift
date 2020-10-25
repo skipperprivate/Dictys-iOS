@@ -1,9 +1,5 @@
 //
-//  DictysViewController.swift
-//  Dicty
-//
-//  Created by Егор Бедов on 17/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
+// Copyright © 2020 Dictys. All rights reserved.
 //
 
 import UIKit
@@ -37,6 +33,7 @@ class DictysViewController: UITableViewController {
     guard let cell = tableView.dequeueReusableCell(withIdentifier: "DictyCell", for: indexPath) as? DictyCell else {
       return .init()
     }
+    systemMinimumLayoutMargins
 
     cell.customizeCell(icon: dictys[indexPath.section].dictys[indexPath.row].icon,
                        title: dictys[indexPath.section].dictys[indexPath.row].title)
@@ -68,10 +65,11 @@ class DictysViewController: UITableViewController {
   }
 
   func customizeNavigationItem() {
-    leftNavBarButton.image = UIImage(named: "AddIcon")
-    rightNavBarButton.image = UIImage(named: "SearchIcon")
-    leftNavBarButton.tintColor = UIColor.blue
-    rightNavBarButton.tintColor = UIColor.blue
+//    leftNavBarButton.image = #imageLiteral(resourceName: "Plus")
+    rightNavBarButton.image = #imageLiteral(resourceName: "SearchIcon")
+
+    leftNavBarButton.tintColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
+    rightNavBarButton.tintColor = #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
   }
 
   func customizeHeader() {

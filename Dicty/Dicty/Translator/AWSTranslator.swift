@@ -1,4 +1,6 @@
-//  Copyright © 2020 Dicty
+//
+// Copyright © 2020 Dictys. All rights reserved.
+//
 
 import AWSTranslate
 

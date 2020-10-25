@@ -1,4 +1,6 @@
-//  Copyright © 2020 Dictys
+//
+// Copyright © 2020 Dictys. All rights reserved.
+//
 
 struct T {
     static let ModelName = "Dictys"
@@ -14,7 +16,6 @@ struct T {
         static let Table = "TDicty"
         static let Name = "name"
     }
-    
     static let UserTables = [T.Translates.Table, T.Dictys.Table]
 
     // MARK: Default tables

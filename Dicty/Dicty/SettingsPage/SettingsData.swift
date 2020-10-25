@@ -1,9 +1,5 @@
 //
-//  SettingsData.swift
-//  Dicty
-//
-//  Created by Егор Бедов on 12/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
+//  Copyright © 2020 Dictys. All rights reserved.
 //
 
 import UIKit

@@ -1,11 +1,6 @@
 //
-//  DictyViewController.swift
-//  Dicty
+// Copyright © 2020 Dictys. All rights reserved.
 //
-//  Created by Егор Бедов on 19/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
-//
-
 import UIKit
 
 class DictyViewController: UITableViewController {
@@ -106,10 +101,10 @@ extension DictyViewController: UISearchResultsUpdating {
 extension UITableView {
   func showEmptyTableView() {
     let label = UILabel(frame: CGRect(origin: CGPoint(x: 0, y: 0), size: CGSize(width: self.bounds.size.width, height: self.bounds.size.height)))
-    label.backgroundColor = UIColor.cyan
+    label.backgroundColor = #colorLiteral(red: 0, green: 0.9914394021, blue: 1, alpha: 1)
     label.textAlignment = .center
     label.text = "No words"
-    label.textColor = UIColor.white
+    label.textColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
     label.numberOfLines = 0
     label.sizeToFit()
 

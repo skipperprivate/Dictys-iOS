@@ -1,9 +1,5 @@
 //
-//  LanguagesData.swift
-//  Dicty
-//
-//  Created by Егор Бедов on 15/01/2020.
-//  Copyright © 2020 Егор Бедов. All rights reserved.
+//  Copyright © 2020 Dictys. All rights reserved.
 //
 
 enum Languages: String {
