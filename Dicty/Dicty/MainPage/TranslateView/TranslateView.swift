@@ -2,8 +2,8 @@
 //  Copyright © 2020 Dictys. All rights reserved.
 //
 
-import UIKit
 import TinyConstraints
+import UIKit
 
 protocol TranslateViewDelegate: AnyObject, UITextViewDelegate {
     func onSourceLanguageButtonTap()
@@ -66,7 +66,11 @@ class TranslateView: UIView {
     private let changeLanguagesButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setTitleColor(UIColor.white, for: UIControl.State.normal)
-        button.setImage(UIImage(systemName: "arrow.right.arrow.left.circle.fill"), for: UIControl.State.normal)
+        if #available(iOS 13.0, *) {
+            button.setImage(UIImage(systemName: "arrow.right.arrow.left.circle.fill"), for: UIControl.State.normal)
+        } else {
+            button.setImage(#imageLiteral(resourceName: "SwitchLanguagesIcon"), for: UIControl.State.normal)
+        }
         button.backgroundColor = .clear
         button.set(cornerRadius: 5.0)
         return button
