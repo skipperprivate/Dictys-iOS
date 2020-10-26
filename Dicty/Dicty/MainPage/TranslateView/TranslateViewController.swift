@@ -1,8 +1,4 @@
 //
-//  TranslateViewController.swift
-//  Dicty
-//
-//  Created by a.chetverov on 22.10.2020.
 //  Copyright © 2020 Dicty. All rights reserved.
 //
 
@@ -14,41 +10,43 @@ enum TranslateViewPlaceholders: String {
 }
 
 class TranslateViewController: UIViewController, TranslateViewDelegate {
+    var sourceLang = UDUtils.getSourceLang()
+    var targetLang = UDUtils.getTargetLang()
+
+    let headerTranslateView = TranslateView()
+
     func onSourceLanguageButtonTap() {
-        guard let viewController: SelectLanguageViewController = {
+        guard let selectLanguageVC: SelectLanguageViewController = {
             let storyboard = UIStoryboard(name: "MainPage", bundle: Bundle.main)
-            guard let viewController = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
+            guard let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
             else {
                 return nil
             }
-            return viewController
+            return selectLanguageVC
         }() else {
             return
         }
 
-        self.present(viewController, animated: true, completion: nil)
+        selectLanguageVC.lang = K.UserDefaults.SourceLang
+        self.present(selectLanguageVC, animated: true, completion: nil)
     }
 
     func onTargetLanguageButtonTap() {
-        guard let viewController: SelectLanguageViewController = {
+        guard let selectLanguageVC: SelectLanguageViewController = {
             let storyboard = UIStoryboard(name: "MainPage", bundle: Bundle.main)
-            guard let viewController = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
+            guard let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
             else {
                 return nil
             }
-            return viewController
+            return selectLanguageVC
         }() else {
             return
         }
 
-        self.present(viewController, animated: true, completion: nil)
+        selectLanguageVC.lang = K.UserDefaults.TargetLang
+        // TODO: @chtvrv present correctly plz
+        self.present(selectLanguageVC, animated: true, completion: nil)
     }
-
-    var sourceLang: TranslatorSupportedLanguage = .russian
-    var targetLang: TranslatorSupportedLanguage = .english
-
-
-    let headerTranslateView = TranslateView()
 
     public override func loadView() {
         headerTranslateView.delegate = self

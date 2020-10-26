@@ -8,8 +8,8 @@ import UIKit
 class TranslateSimpleViewController: FormViewController {
     var languages: [LanguageModel] = []
     let database = Database.shared
-    var sourceLang = TranslatorSupportedLanguage.russian
-    var targetLang = TranslatorSupportedLanguage.english
+    var sourceLang = TranslatorSupportedLanguage(rawValue: UserDefaults.standard.string(forKey: K.UserDefaults.SourceLang) ?? TranslatorSupportedLanguage.russian.rawValue) ?? TranslatorSupportedLanguage.russian
+    var targetLang = TranslatorSupportedLanguage(rawValue: UserDefaults.standard.string(forKey: K.UserDefaults.TargetLang) ?? TranslatorSupportedLanguage.english.rawValue) ?? TranslatorSupportedLanguage.english
 
   override func viewDidLoad() {
     super.viewDidLoad()

@@ -2,6 +2,16 @@
 // Copyright © 2020 Dictys. All rights reserved.
 //
 
+enum TranslatorSupportedLanguage: String, CaseIterable {
+    case russian = "ru"
+    case english = "en"
+    case german = "de"
+    case spanish = "es"
+    case chinese = "zh"
+    case japanese = "ja"
+    case ukrainian = "uk"
+}
+
 let supportedLanguages: [LanguageModel] = [
     LanguageModel("English", 1, TranslatorSupportedLanguage.english),
     LanguageModel("Русский", 2, TranslatorSupportedLanguage.russian),

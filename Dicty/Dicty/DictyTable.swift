@@ -40,7 +40,7 @@ extension Database {
         }
 
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Dictys.Table)
-        fetchRequest.predicate = NSPredicate(format: "%K == %@", T.Translates.OriginalLang, fullName)
+        fetchRequest.predicate = NSPredicate(format: "%K == %@", T.Translates.SourceLang, fullName)
 
         do {
             let result = try managedContext.fetch(fetchRequest)

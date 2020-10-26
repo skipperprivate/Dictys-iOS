@@ -18,8 +18,8 @@ extension Database {
             [
                 T.Translates.Original: newTranslate.original,
                 T.Translates.Translated: newTranslate.translated,
-                T.Translates.OriginalLang: newTranslate.originalLang,
-                T.Translates.TranslatedLang: newTranslate.transatedLang
+                T.Translates.SourceLang: newTranslate.originalLang,
+                T.Translates.TargetLang: newTranslate.transatedLang
             ])
 
         do {

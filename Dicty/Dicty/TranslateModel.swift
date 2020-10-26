@@ -20,8 +20,8 @@ class TranslateModel {
     convenience init?(obj: NSManagedObject) {
         guard let orig = obj.value(forKey: T.Translates.Original) as? String,
               let trans = obj.value(forKey: T.Translates.Translated) as? String,
-              let oLang = obj.value(forKey: T.Translates.OriginalLang) as? TranslatorSupportedLanguage,
-              let tLang = obj.value(forKey: T.Translates.TranslatedLang) as? TranslatorSupportedLanguage
+              let oLang = obj.value(forKey: T.Translates.SourceLang) as? TranslatorSupportedLanguage,
+              let tLang = obj.value(forKey: T.Translates.TargetLang) as? TranslatorSupportedLanguage
         else {
             return nil
         }

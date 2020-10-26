@@ -10,8 +10,8 @@ struct T {
         static let Table = "TTranslate"
         static let Original = "original"
         static let Translated = "translated"
-        static let OriginalLang = "originalLang"
-        static let TranslatedLang = "translatedLang"
+        static let SourceLang = "originalLang"
+        static let TargetLang = "translatedLang"
     }
 
     struct Dictys {
@@ -30,4 +30,11 @@ struct T {
     }
 
     static let DefaultTables = [T.Languages.Table]
+}
+
+struct K {
+    struct UserDefaults {
+        static let SourceLang = "SourceLang"
+        static let TargetLang = "TargetLang"
+    }
 }

@@ -32,6 +32,7 @@
 		C91986192543A9C00044E0E4 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91986182543A9C00044E0E4 /* LanguageModel.swift */; };
 		C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210EC923CB939D00630147 /* SettingsView.swift */; };
 		C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210ECB23CB946B00630147 /* SettingsData.swift */; };
+		C93FD05E2546E2EB002C15A3 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FD05D2546E2EB002C15A3 /* UserDefaultsUtils.swift */; };
 		C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940602123D07AB300984853 /* OfflineDictionariesCell.swift */; };
 		C956845423DBA75500C145D6 /* MainPageDictyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956845323DBA75500C145D6 /* MainPageDictyCell.swift */; };
 		C956845623DBA76B00C145D6 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956845523DBA76B00C145D6 /* MainPageViewController.swift */; };
@@ -115,6 +116,7 @@
 		C91986182543A9C00044E0E4 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 		C9210EC923CB939D00630147 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C9210ECB23CB946B00630147 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
+		C93FD05D2546E2EB002C15A3 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		C940602123D07AB300984853 /* OfflineDictionariesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesCell.swift; sourceTree = "<group>"; };
 		C956845323DBA75500C145D6 /* MainPageDictyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageDictyCell.swift; sourceTree = "<group>"; };
 		C956845523DBA76B00C145D6 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				C909132323D181990017E9FA /* DictysPage */,
 				C90AF89723CB8E3D00B6D192 /* Storyboards */,
 				C90AF86623CB8D3400B6D192 /* AppDelegate.swift */,
+				C91985F5254378750044E0E4 /* Constants.swift */,
 				C90AF86A23CB8D3400B6D192 /* Main.storyboard */,
 				C90AF86D23CB8D3500B6D192 /* Assets.xcassets */,
 				C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */,
@@ -292,7 +295,7 @@
 			children = (
 				C91985FA254378BE0044E0E4 /* Dictys.xcdatamodeld */,
 				C91985E12543738E0044E0E4 /* Database.swift */,
-				C91985F5254378750044E0E4 /* Constants.swift */,
+				C93FD05D2546E2EB002C15A3 /* UserDefaultsUtils.swift */,
 				C9DF753F2545E24400031C89 /* DictyTable.swift */,
 				C9DF75442545E28400031C89 /* TranslatesTable.swift */,
 				C9DF75492545E38900031C89 /* LanguagesTable.swift */,
@@ -686,6 +689,7 @@
 			files = (
 				C909132723D182A80017E9FA /* DictysViewController.swift in Sources */,
 				C956845423DBA75500C145D6 /* MainPageDictyCell.swift in Sources */,
+				C93FD05E2546E2EB002C15A3 /* UserDefaultsUtils.swift in Sources */,
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
 				C91985FC254378BE0044E0E4 /* Dictys.xcdatamodeld in Sources */,
 				C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */,
