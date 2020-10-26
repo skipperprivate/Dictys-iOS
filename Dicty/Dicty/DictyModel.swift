@@ -1,9 +1,11 @@
-//  Copyright © 2020 Dictys
+//
+// Copyright © 2020 Dictys. All rights reserved.
+//
 
 import CoreData
 
 class DictyModel {
-    var name: String!
+    var name: String
 
     init(_ name: String) {
         self.name = name
