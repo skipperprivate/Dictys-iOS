@@ -5,14 +5,14 @@
 import UIKit
 
 class SettingsViewController: UITableViewController {
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = UITableViewCell()
-//        let setting = settings[indexPath.section].fields[indexPath.row]
-//
-//        cell.imageView?.image = resizeImageWithAspect(image: setting.icon!, scaledToMaxWidth: 30, maxHeight: 30)
-//        cell.imageView?.tintColor = UIColor.green   // TODO: Doesn't respect that
-//        cell.textLabel?.text = setting.title
-//
-//        return cell
-//    }
+    var database = Database.shared
+
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+
+        if indexPath.section == 4 && indexPath.row == 1 {
+            database.purge()
+            database.populate()
+        }
+    }
 }

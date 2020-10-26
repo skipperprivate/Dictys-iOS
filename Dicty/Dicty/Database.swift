@@ -5,7 +5,11 @@
 import CoreData
 
 class Database {
-    public lazy var container: NSPersistentContainer = {
+    static var shared = Database()
+
+    private init() {}
+
+    lazy var container: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the
@@ -48,114 +52,20 @@ class Database {
         }
     }
 
-    // MARK: Fetch Funcs
-    public func fetchDictys() -> [DictyModel] {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Dictys.Table)
-
-        do {
-            return try managedContext.fetch(fetchRequest).compactMap { DictyModel(obj: $0) }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return []
-        }
-    }
-
-    public func fetchTranslates() -> [TranslateModel] {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Translates.Table)
-
-        do {
-            return try managedContext.fetch(fetchRequest).compactMap { TranslateModel(obj: $0) }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return []
-        }
-    }
-
-    public func fetchLanguages() -> [LanguageModel] {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Languages.Table)
-
-        do {
-            return try managedContext.fetch(fetchRequest).compactMap { LanguageModel(obj: $0) }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return []
-        }
-    }
-
-    // MARK: Insert funcs
-    public func createDicty(name: String) -> Bool {
-        guard !name.isEmpty else { return false }
-        let entity = NSEntityDescription.entity(forEntityName: T.Dictys.Table, in: managedContext)!
-        let dicty = NSManagedObject(entity: entity, insertInto: managedContext)
-
-        dicty.setValue(name, forKeyPath: T.Dictys.Name)
-
-        do {
-            try managedContext.save()
-            return true
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-            return false
-        }
-    }
-
-    public func createTranslate(original orig: String, translated trans: String) -> Bool {
-        guard !orig.isEmpty,
-              !trans.isEmpty else { return false }
-        // TODO: insert dicty with trans lang if not exists
-        let entity = NSEntityDescription.entity(forEntityName: T.Translates.Table, in: managedContext)!
-        let translate = NSManagedObject(entity: entity, insertInto: managedContext)
-
-        translate.setValuesForKeys([ T.Translates.Original: orig, T.Translates.Translated: trans ])
-
-        do {
-            try managedContext.save()
-            return true
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-            return false
-        }
-    }
-
-    public func populate() {
-        self.insertDefaultLanguages()
-    }
-
-    private func insertDefaultLanguages() {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Languages.Table)
-
-        do {
-            let amount = try managedContext.count(for: fetchRequest)
-            if amount != 0 { return }
-        } catch let error as NSError {
-            print("Could not count languages. \(error), \(error.userInfo)")
-            return
-        }
-
-        for lang in supportedLanguages {
-            let entity = NSEntityDescription.entity(forEntityName: T.Languages.Table, in: managedContext)!
-            let translate = NSManagedObject(entity: entity, insertInto: managedContext)
-
-            translate.setValuesForKeys([ T.Languages.Name: lang.name, T.Languages.Id: lang.id ])
-        }
-
-        do {
-            try managedContext.save()
-        } catch let error as NSError {
-            print("Could not insert default languages. \(error), \(error.userInfo)")
-        }
+    func populate() {
+        insertDefaultLanguages()
     }
 
     // MARK: Delete funcs
-    public func cleanUserStorage() {
+    func cleanUserStorage() {
         for entityName in T.UserTables {
-            self.deleteEntityInstances(entityName: entityName)
+            deleteEntityInstances(entityName: entityName)
         }
     }
 
-    public func purge() {
+    func purge() {
         for entityName in T.DefaultTables {
-            self.deleteEntityInstances(entityName: entityName)
+            deleteEntityInstances(entityName: entityName)
         }
     }
 

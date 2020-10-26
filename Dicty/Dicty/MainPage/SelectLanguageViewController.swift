@@ -5,7 +5,10 @@
 import UIKit
 
 class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let languages: [String] = ["English", "Russian", "Englist", "Russian", "Russian"]
+    let database = Database.shared
+    let defaults = UserDefaults.standard
+    var lang: String?
+    var languages: [LanguageModel] = []
 
     let cellReuseIdentifier = "cell"
 
@@ -18,6 +21,8 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
 
         tableView.delegate = self
         tableView.dataSource = self
+
+        languages = database.fetchLanguages()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,12 +34,18 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
             return .init()
         }
 
-        cell.textLabel?.text = self.languages[indexPath.row]
+        cell.textLabel?.text = self.languages[indexPath.row].name
 
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+//        print("You tapped cell number \(indexPath.row).")
+        defaults.set(languages[indexPath.row].shortName.rawValue, forKey: lang ?? K.UserDefaults.SourceLang)
+        if let parent = self.presentingViewController as? TranslateViewController {
+            // TODO: @chtvrv call this fund here
+            parent.headerTranslateView.reloadButtons()
+        }
+        self.dismiss(animated: true, completion: nil)
     }
 }

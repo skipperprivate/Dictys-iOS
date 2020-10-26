@@ -27,7 +27,7 @@ extension DictysCategory {
         return [
             DictysCategory(title: "General dictys", dictys: [
                 Dicty(title: "English",
-                      icon: #imageLiteral(resourceName: "Enlish"),
+                      icon: #imageLiteral(resourceName: "English"),
                       words: ["Apple", "Insert"]),
                 Dicty(title: "German",
                       icon: #imageLiteral(resourceName: "German"),

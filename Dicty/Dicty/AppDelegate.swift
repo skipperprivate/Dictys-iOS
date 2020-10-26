@@ -7,13 +7,11 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
-    lazy var database = Database()
+    let database = Database.shared
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        guard let navController = window?.rootViewController as? UINavigationController, let viewController = navController.topViewController as? MainPageViewController else { return true }
-//        viewController.database = database
+        database.purge()
         database.populate()
-
         return true
     }
 
