@@ -2,6 +2,7 @@
 // Copyright © 2020 Dictys. All rights reserved.
 //
 
+import TinyConstraints
 import UIKit
 
 class MonthWordView: UIView {
@@ -9,11 +10,16 @@ class MonthWordView: UIView {
         super.init(frame: frame)
         self.setSubviewForAutoLayout(self.verticalStackView)
 
-        NSLayoutConstraint.activate([
-            verticalStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 12),
-            verticalStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
-            verticalStackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0)
-        ])
+//        NSLayoutConstraint.activate([
+//            verticalStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 12),
+//            verticalStackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
+//            verticalStackView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: 0)
+//        ])
+
+        verticalStackView.edgesToSuperview(insets: .top(12))
+
+
+
     }
 
     @available(*, unavailable)
@@ -73,10 +79,7 @@ class MonthWordView: UIView {
         stackView.axis = NSLayoutConstraint.Axis.vertical
         stackView.distribution = UIStackView.Distribution.fill
 
-        NSLayoutConstraint.activate([
-            innerVerticalStackView.leftAnchor.constraint(equalTo: stackView.leftAnchor, constant: 0),
-            innerVerticalStackView.rightAnchor.constraint(equalTo: stackView.rightAnchor, constant: 0)
-        ])
+        innerVerticalStackView.edgesToSuperview()
 
         stackView.alignment = UIStackView.Alignment.center
         stackView.spacing = 5.0

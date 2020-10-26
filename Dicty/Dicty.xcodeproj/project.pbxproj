@@ -50,6 +50,7 @@
 		EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */; };
 		EFF36B652545DF2E00220D8A /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B632545DF2E00220D8A /* LanguagesViewController.swift */; };
 		EFF36B662545DF2E00220D8A /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B642545DF2E00220D8A /* LanguagesData.swift */; };
+		EFF36B6B2546151100220D8A /* UILabel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B6A2546151100220D8A /* UILabel+Additions.swift */; };
 		EFF83D112542F71E0009981B /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D102542F71E0009981B /* TranslateView.swift */; };
 		EFF83D1A25430F610009981B /* MonthWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D1925430F610009981B /* MonthWordView.swift */; };
 		EFFD646B253C3ACC006E46E3 /* TranslateSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */; };
@@ -130,6 +131,7 @@
 		EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCredentials.generated.swift; sourceTree = "<group>"; };
 		EFF36B632545DF2E00220D8A /* LanguagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		EFF36B642545DF2E00220D8A /* LanguagesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
+		EFF36B6A2546151100220D8A /* UILabel+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Additions.swift"; sourceTree = "<group>"; };
 		EFF83D102542F71E0009981B /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
 		EFF83D1925430F610009981B /* MonthWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthWordView.swift; sourceTree = "<group>"; };
 		EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateSimpleViewController.swift; sourceTree = "<group>"; };
@@ -330,6 +332,7 @@
 			children = (
 				EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */,
 				EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */,
+				EFF36B6A2546151100220D8A /* UILabel+Additions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -700,6 +703,7 @@
 				C979833023D4F951005DC00F /* WordData.swift in Sources */,
 				C9198602254390CB0044E0E4 /* DictyModel.swift in Sources */,
 				C9198607254391090044E0E4 /* TranslateModel.swift in Sources */,
+				EFF36B6B2546151100220D8A /* UILabel+Additions.swift in Sources */,
 				EF8904D325417A2400D5C9BD /* MonthWordViewController.swift in Sources */,
 				C979832E23D4F79F005DC00F /* WordCell.swift in Sources */,
 				EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */,

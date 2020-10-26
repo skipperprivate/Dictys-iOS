@@ -47,12 +47,16 @@ class TranslateViewController: UIViewController, TranslateViewDelegate {
     var sourceLang: TranslatorSupportedLanguage = .russian
     var targetLang: TranslatorSupportedLanguage = .english
 
-
     let headerTranslateView = TranslateView()
 
-    public override func loadView() {
+    override func loadView() {
         headerTranslateView.delegate = self
         self.view = headerTranslateView
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        headerTranslateView.resizeLabels()
     }
 
     override func viewDidLoad() {
