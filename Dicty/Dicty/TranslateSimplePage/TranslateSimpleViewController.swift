@@ -6,11 +6,15 @@ import Eureka
 import UIKit
 
 class TranslateSimpleViewController: FormViewController {
-  var sourceLang: TranslatorSupportedLanguage = .russian
-  var targetLang: TranslatorSupportedLanguage = .english
+    var languages: [LanguageModel] = []
+    let database = Database.shared
+    var sourceLang = TranslatorSupportedLanguage.russian
+    var targetLang = TranslatorSupportedLanguage.english
 
   override func viewDidLoad() {
     super.viewDidLoad()
+
+    languages = database.fetchLanguages()
 
     form +++
 
@@ -18,8 +22,8 @@ class TranslateSimpleViewController: FormViewController {
 
       <<< DoublePickerInlineRow<String, String>("Languages Picker") {
         $0.title = "2 Component picker"
-        $0.firstOptions = { TranslatorSupportedLanguage.allCases.map { $0.rawValue } }
-        $0.secondOptions = { _ in TranslatorSupportedLanguage.allCases.map { $0.rawValue } }
+        $0.firstOptions = { self.languages.map { $0.shortName.rawValue } }
+        $0.secondOptions = { _ in self.languages.map { $0.shortName.rawValue } }
 
         $0.onChange { picker in
           guard

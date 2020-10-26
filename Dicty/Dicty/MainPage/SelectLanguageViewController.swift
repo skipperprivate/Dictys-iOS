@@ -5,7 +5,8 @@
 import UIKit
 
 class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    let languages: [String] = ["English", "Russian", "Englist", "Russian", "Russian"]
+    let database = Database.shared
+    var languages: [LanguageModel] = []
 
     let cellReuseIdentifier = "cell"
 
@@ -18,6 +19,8 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
 
         tableView.delegate = self
         tableView.dataSource = self
+
+        languages = database.fetchLanguages()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,7 +32,7 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
             return .init()
         }
 
-        cell.textLabel?.text = self.languages[indexPath.row]
+        cell.textLabel?.text = self.languages[indexPath.row].name
 
         return cell
     }

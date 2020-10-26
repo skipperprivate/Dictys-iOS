@@ -42,6 +42,9 @@
 		C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B245C23CF32DA003D64E3 /* SettingsCell.swift */; };
 		C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */; };
 		C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */; };
+		C9DF75402545E24400031C89 /* DictyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF753F2545E24400031C89 /* DictyTable.swift */; };
+		C9DF75452545E28400031C89 /* TranslatesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF75442545E28400031C89 /* TranslatesTable.swift */; };
+		C9DF754A2545E38900031C89 /* LanguagesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF75492545E38900031C89 /* LanguagesTable.swift */; };
 		EF24553025422BF100EDD792 /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */; };
 		EF8339CF2544804600D9A5F3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */; };
 		EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */; };
@@ -122,6 +125,9 @@
 		C98B245C23CF32DA003D64E3 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 		C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesViewController.swift; sourceTree = "<group>"; };
 		C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesData.swift; sourceTree = "<group>"; };
+		C9DF753F2545E24400031C89 /* DictyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyTable.swift; sourceTree = "<group>"; };
+		C9DF75442545E28400031C89 /* TranslatesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatesTable.swift; sourceTree = "<group>"; };
+		C9DF75492545E38900031C89 /* LanguagesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTable.swift; sourceTree = "<group>"; };
 		EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
 		EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
@@ -287,6 +293,9 @@
 				C91985FA254378BE0044E0E4 /* Dictys.xcdatamodeld */,
 				C91985E12543738E0044E0E4 /* Database.swift */,
 				C91985F5254378750044E0E4 /* Constants.swift */,
+				C9DF753F2545E24400031C89 /* DictyTable.swift */,
+				C9DF75442545E28400031C89 /* TranslatesTable.swift */,
+				C9DF75492545E38900031C89 /* LanguagesTable.swift */,
 				C91986132543A13E0044E0E4 /* StaticData.swift */,
 			);
 			name = Database;
@@ -691,8 +700,10 @@
 				EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */,
 				EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */,
 				EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */,
+				C9DF75452545E28400031C89 /* TranslatesTable.swift in Sources */,
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
 				C909132523D181B50017E9FA /* DictyCell.swift in Sources */,
+				C9DF754A2545E38900031C89 /* LanguagesTable.swift in Sources */,
 				EFF36B662545DF2E00220D8A /* LanguagesData.swift in Sources */,
 				C91986142543A13E0044E0E4 /* StaticData.swift in Sources */,
 				C91985E22543738E0044E0E4 /* Database.swift in Sources */,
@@ -704,6 +715,7 @@
 				C979832E23D4F79F005DC00F /* WordCell.swift in Sources */,
 				EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */,
 				C909132B23D18CF00017E9FA /* DictysData.swift in Sources */,
+				C9DF75402545E24400031C89 /* DictyTable.swift in Sources */,
 				C91986192543A9C00044E0E4 /* LanguageModel.swift in Sources */,
 				C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */,
 				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
