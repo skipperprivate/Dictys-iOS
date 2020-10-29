@@ -13,6 +13,8 @@ target 'Dicty' do
   pod 'Eureka'
   pod 'SwiftLint'
   pod 'TinyConstraints'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   
   target 'DictyTests' do
     inherit! :search_paths

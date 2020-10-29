@@ -5,16 +5,16 @@
 import CoreData
 
 extension Database {
-    func fetchDictys() -> [DictyModel] {
-        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Dictys.Table)
-
-        do {
-            return try managedContext.fetch(fetchRequest).compactMap { DictyModel(obj: $0) }
-        } catch let error as NSError {
-            print("Could not fetch. \(error), \(error.userInfo)")
-            return []
-        }
-    }
+//    func fetchDictys() -> [DictyModel] {
+//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Dictys.Table)
+//
+//        do {
+//            return try managedContext.fetch(fetchRequest).compactMap { DictyModel(obj: $0) }
+//        } catch let error as NSError {
+//            print("Could not fetch. \(error), \(error.userInfo)")
+//            return []
+//        }
+//    }
 
     func createDicty(newDicty: DictyModel) -> Bool {
         guard !newDicty.name.isEmpty else { return false }
@@ -34,10 +34,13 @@ extension Database {
 
     // Checks whether default dicty for that language exists
     func dictyLangExists(lang: TranslatorSupportedLanguage) -> Bool {
-        guard let fullName = supportedLanguages.first(where: { $0.shortName == lang })?.name else {
+        guard let supLang = supportedLanguages.first(where: { $0.shortName == lang }) else {
             print("[FATAL ERROR] (Database.checkForLangDicty): supportedLanguages is out of sync with TranslatorSupportedLanguage")
             return false
         }
+
+        let fullName = supLang.name
+        let id = supLang.id
 
         let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: T.Dictys.Table)
         fetchRequest.predicate = NSPredicate(format: "%K == %@", T.Translates.SourceLang, fullName)
@@ -45,7 +48,7 @@ extension Database {
         do {
             let result = try managedContext.fetch(fetchRequest)
             if result.isEmpty {
-                return createDicty(newDicty: DictyModel(fullName))
+                return createDicty(newDicty: DictyModel(fullName, category: staticCategoriesLangs.first{ $0.id == id } ?? staticCategoriesLangs[0])) // TODO: Create the default error category
             } else {
                 print(result)
                 return true

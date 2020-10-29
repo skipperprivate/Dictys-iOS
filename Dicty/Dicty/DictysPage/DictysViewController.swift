@@ -5,45 +5,46 @@
 import UIKit
 
 class DictysViewController: UITableViewController {
-  @IBOutlet var leftNavBarButton: UIBarButtonItem!
-  @IBOutlet var rightNavBarButton: UIBarButtonItem!
+    @IBOutlet var leftNavBarButton: UIBarButtonItem!
+    @IBOutlet var rightNavBarButton: UIBarButtonItem!
 
-  var dictys = DictysCategory.tempDictys
+    let sections: [(String, [DictyModel])] = [
+        ("General dictys", tmpLangDictys),
+        ("Your dictys", tmpCustomDictys)
+    ]
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    //        self.tableView.backgroundColor = UIColor.black
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-    customizeNavigationItem()
-  }
-
-  override func numberOfSections(in tableView: UITableView) -> Int {
-    return dictys.count
-  }
-
-  override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-    return dictys[section].title
-  }
-
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return dictys[section].dictys.count
-  }
-
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "DictyCell", for: indexPath) as? DictyCell else {
-      return .init()
-    }
-    systemMinimumLayoutMargins
-
-    cell.customizeCell(icon: dictys[indexPath.section].dictys[indexPath.row].icon,
-                       title: dictys[indexPath.section].dictys[indexPath.row].title)
-
-    if indexPath.section == 2 {
-      cell.fillIcon()
+        customizeNavigationItem()
     }
 
-    return cell
-  }
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return sections.count
+    }
+
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section].0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return sections[section].1.count
+    }
+
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DictyCell", for: indexPath) as? DictyCell else {
+            return .init()
+        }
+        systemMinimumLayoutMargins
+
+        cell.configure(viewModel: DictyViewVM(dicty: sections[indexPath.section].1[indexPath.row]))
+
+        if indexPath.section == 2 {
+            cell.fillIcon()
+        }
+
+        return cell
+    }
 
   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     // Unselect the row
