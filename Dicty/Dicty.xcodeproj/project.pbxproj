@@ -14,28 +14,17 @@
 		C909132723D182A80017E9FA /* DictysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132623D182A80017E9FA /* DictysViewController.swift */; };
 		C909132B23D18CF00017E9FA /* DictysData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C909132A23D18CF00017E9FA /* DictysData.swift */; };
 		C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF86623CB8D3400B6D192 /* AppDelegate.swift */; };
-		C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86A23CB8D3400B6D192 /* Main.storyboard */; };
 		C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86D23CB8D3500B6D192 /* Assets.xcassets */; };
 		C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */; };
 		C90AF87C23CB8D3500B6D192 /* DictyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF87B23CB8D3500B6D192 /* DictyTests.swift */; };
 		C90AF88723CB8D3500B6D192 /* DictyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AF88623CB8D3500B6D192 /* DictyUITests.swift */; };
-		C90AF89623CB8E3100B6D192 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89423CB8E3100B6D192 /* MainPage.storyboard */; };
 		C90AF89A23CB8E8E00B6D192 /* Dictys.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */; };
-		C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */; };
 		C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */; };
-		C91985E22543738E0044E0E4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91985E12543738E0044E0E4 /* Database.swift */; };
-		C91985F6254378750044E0E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91985F5254378750044E0E4 /* Constants.swift */; };
 		C91985FC254378BE0044E0E4 /* Dictys.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C91985FA254378BE0044E0E4 /* Dictys.xcdatamodeld */; };
-		C9198602254390CB0044E0E4 /* DictyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9198601254390CB0044E0E4 /* DictyModel.swift */; };
-		C9198607254391090044E0E4 /* TranslateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9198606254391090044E0E4 /* TranslateModel.swift */; };
-		C91986142543A13E0044E0E4 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91986132543A13E0044E0E4 /* StaticData.swift */; };
-		C91986192543A9C00044E0E4 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91986182543A9C00044E0E4 /* LanguageModel.swift */; };
 		C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210EC923CB939D00630147 /* SettingsView.swift */; };
 		C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9210ECB23CB946B00630147 /* SettingsData.swift */; };
 		C93FD05E2546E2EB002C15A3 /* UserDefaultsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FD05D2546E2EB002C15A3 /* UserDefaultsUtils.swift */; };
 		C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940602123D07AB300984853 /* OfflineDictionariesCell.swift */; };
-		C956845423DBA75500C145D6 /* MainPageDictyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956845323DBA75500C145D6 /* MainPageDictyCell.swift */; };
-		C956845623DBA76B00C145D6 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956845523DBA76B00C145D6 /* MainPageViewController.swift */; };
 		C979832A23D4F3B7005DC00F /* Dicty.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C979832923D4F3B7005DC00F /* Dicty.storyboard */; };
 		C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979832B23D4F3E2005DC00F /* DictyViewController.swift */; };
 		C979832E23D4F79F005DC00F /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C979832D23D4F79F005DC00F /* WordCell.swift */; };
@@ -43,20 +32,31 @@
 		C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B245C23CF32DA003D64E3 /* SettingsCell.swift */; };
 		C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246A23CF71A8003D64E3 /* OfflineDictionariesViewController.swift */; };
 		C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98B246C23CF71FA003D64E3 /* OfflineDictionariesData.swift */; };
-		C9DF75402545E24400031C89 /* DictyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF753F2545E24400031C89 /* DictyTable.swift */; };
-		C9DF75452545E28400031C89 /* TranslatesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF75442545E28400031C89 /* TranslatesTable.swift */; };
-		C9DF754A2545E38900031C89 /* LanguagesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF75492545E38900031C89 /* LanguagesTable.swift */; };
-		EF24553025422BF100EDD792 /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */; };
+		EF8143B825477B7200B6C8FA /* DictysTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8143B725477B7200B6C8FA /* DictysTabBarController.swift */; };
 		EF8339CF2544804600D9A5F3 /* UIViewController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */; };
 		EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */; };
-		EF8904D325417A2400D5C9BD /* MonthWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */; };
-		EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */; };
 		EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */; };
 		EFF36B652545DF2E00220D8A /* LanguagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B632545DF2E00220D8A /* LanguagesViewController.swift */; };
 		EFF36B662545DF2E00220D8A /* LanguagesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B642545DF2E00220D8A /* LanguagesData.swift */; };
 		EFF36B6B2546151100220D8A /* UILabel+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF36B6A2546151100220D8A /* UILabel+Additions.swift */; };
-		EFF83D112542F71E0009981B /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D102542F71E0009981B /* TranslateView.swift */; };
-		EFF83D1A25430F610009981B /* MonthWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF83D1925430F610009981B /* MonthWordView.swift */; };
+		EFFB957B254AFD1500FFFA73 /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB956E254AFD1500FFFA73 /* SelectLanguageViewController.swift */; };
+		EFFB957C254AFD1500FFFA73 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9570254AFD1500FFFA73 /* MainPageView.swift */; };
+		EFFB957D254AFD1600FFFA73 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9571254AFD1500FFFA73 /* MainPageViewController.swift */; };
+		EFFB957E254AFD1600FFFA73 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9573254AFD1500FFFA73 /* TranslateView.swift */; };
+		EFFB957F254AFD1600FFFA73 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9574254AFD1500FFFA73 /* TranslateViewController.swift */; };
+		EFFB9580254AFD1600FFFA73 /* MonthWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9576254AFD1500FFFA73 /* MonthWordView.swift */; };
+		EFFB9581254AFD1600FFFA73 /* MonthWordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9577254AFD1500FFFA73 /* MonthWordViewController.swift */; };
+		EFFB958B254AFD2600FFFA73 /* StaticData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9587254AFD2600FFFA73 /* StaticData.swift */; };
+		EFFB958C254AFD2600FFFA73 /* DictyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9588254AFD2600FFFA73 /* DictyModel.swift */; };
+		EFFB958D254AFD2600FFFA73 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9589254AFD2600FFFA73 /* LanguageModel.swift */; };
+		EFFB958E254AFD2600FFFA73 /* TranslateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB958A254AFD2600FFFA73 /* TranslateModel.swift */; };
+		EFFB959A254AFD2D00FFFA73 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9593254AFD2D00FFFA73 /* Constants.swift */; };
+		EFFB959B254AFD2D00FFFA73 /* LanguagesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9595254AFD2D00FFFA73 /* LanguagesTable.swift */; };
+		EFFB959C254AFD2D00FFFA73 /* DictyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9596254AFD2D00FFFA73 /* DictyTable.swift */; };
+		EFFB959D254AFD2D00FFFA73 /* TranslatesTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9597254AFD2D00FFFA73 /* TranslatesTable.swift */; };
+		EFFB959E254AFD2D00FFFA73 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB9598254AFD2D00FFFA73 /* Database.swift */; };
+		EFFB95CC254B183800FFFA73 /* MainPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB95CB254B183800FFFA73 /* MainPageViewModel.swift */; };
+		EFFB95DC254C16F700FFFA73 /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFB95DA254C16F700FFFA73 /* MainPage.storyboard */; };
 		EFFD646B253C3ACC006E46E3 /* TranslateSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */; };
 		EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD648F253C3DE4006E46E3 /* Translator.swift */; };
 		EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */; };
@@ -94,7 +94,6 @@
 		C909132A23D18CF00017E9FA /* DictysData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysData.swift; sourceTree = "<group>"; };
 		C90AF86323CB8D3400B6D192 /* Dicty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dicty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF86623CB8D3400B6D192 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C90AF86B23CB8D3400B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C90AF86D23CB8D3500B6D192 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C90AF87023CB8D3500B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C90AF87223CB8D3500B6D192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,23 +103,15 @@
 		C90AF88223CB8D3500B6D192 /* DictyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C90AF88623CB8D3500B6D192 /* DictyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyUITests.swift; sourceTree = "<group>"; };
 		C90AF88823CB8D3500B6D192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C90AF89523CB8E3100B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dicty/Base.lproj/MainPage.storyboard; sourceTree = "<group>"; };
 		C90AF89923CB8E8E00B6D192 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Dicty/Base.lproj/Dictys.storyboard; sourceTree = "<group>"; };
-		C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoolStuff.storyboard; sourceTree = "<group>"; };
 		C90AF89D23CB8F1B00B6D192 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		C91985E12543738E0044E0E4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
-		C91985F5254378750044E0E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C91985FB254378BE0044E0E4 /* Dictys.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dictys.xcdatamodel; sourceTree = "<group>"; };
-		C9198601254390CB0044E0E4 /* DictyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyModel.swift; sourceTree = "<group>"; };
-		C9198606254391090044E0E4 /* TranslateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateModel.swift; sourceTree = "<group>"; };
 		C91986132543A13E0044E0E4 /* StaticData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
-		C91986182543A9C00044E0E4 /* LanguageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
 		C9210EC923CB939D00630147 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		C9210ECB23CB946B00630147 /* SettingsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
 		C93FD05D2546E2EB002C15A3 /* UserDefaultsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsUtils.swift; sourceTree = "<group>"; };
 		C940602123D07AB300984853 /* OfflineDictionariesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineDictionariesCell.swift; sourceTree = "<group>"; };
-		C956845323DBA75500C145D6 /* MainPageDictyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageDictyCell.swift; sourceTree = "<group>"; };
-		C956845523DBA76B00C145D6 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		C979832923D4F3B7005DC00F /* Dicty.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dicty.storyboard; sourceTree = "<group>"; };
 		C979832B23D4F3E2005DC00F /* DictyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyViewController.swift; sourceTree = "<group>"; };
 		C979832D23D4F79F005DC00F /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
@@ -131,17 +122,31 @@
 		C9DF753F2545E24400031C89 /* DictyTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictyTable.swift; sourceTree = "<group>"; };
 		C9DF75442545E28400031C89 /* TranslatesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatesTable.swift; sourceTree = "<group>"; };
 		C9DF75492545E38900031C89 /* LanguagesTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesTable.swift; sourceTree = "<group>"; };
-		EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
+		EF8143B725477B7200B6C8FA /* DictysTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictysTabBarController.swift; sourceTree = "<group>"; };
 		EF8339CE2544804600D9A5F3 /* UIViewController+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Additions.swift"; sourceTree = "<group>"; };
 		EF8339D62544811A00D9A5F3 /* UIView+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Additions.swift"; sourceTree = "<group>"; };
-		EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthWordViewController.swift; sourceTree = "<group>"; };
-		EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		EF897CCB253CA15700B2B8EF /* AWSCredentials.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSCredentials.generated.swift; sourceTree = "<group>"; };
 		EFF36B632545DF2E00220D8A /* LanguagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesViewController.swift; sourceTree = "<group>"; };
 		EFF36B642545DF2E00220D8A /* LanguagesData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesData.swift; sourceTree = "<group>"; };
 		EFF36B6A2546151100220D8A /* UILabel+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Additions.swift"; sourceTree = "<group>"; };
-		EFF83D102542F71E0009981B /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
-		EFF83D1925430F610009981B /* MonthWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthWordView.swift; sourceTree = "<group>"; };
+		EFFB956E254AFD1500FFFA73 /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
+		EFFB9570254AFD1500FFFA73 /* MainPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		EFFB9571254AFD1500FFFA73 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		EFFB9573254AFD1500FFFA73 /* TranslateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		EFFB9574254AFD1500FFFA73 /* TranslateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		EFFB9576254AFD1500FFFA73 /* MonthWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthWordView.swift; sourceTree = "<group>"; };
+		EFFB9577254AFD1500FFFA73 /* MonthWordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthWordViewController.swift; sourceTree = "<group>"; };
+		EFFB9587254AFD2600FFFA73 /* StaticData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticData.swift; sourceTree = "<group>"; };
+		EFFB9588254AFD2600FFFA73 /* DictyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictyModel.swift; sourceTree = "<group>"; };
+		EFFB9589254AFD2600FFFA73 /* LanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageModel.swift; sourceTree = "<group>"; };
+		EFFB958A254AFD2600FFFA73 /* TranslateModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateModel.swift; sourceTree = "<group>"; };
+		EFFB9593254AFD2D00FFFA73 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EFFB9595254AFD2D00FFFA73 /* LanguagesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguagesTable.swift; sourceTree = "<group>"; };
+		EFFB9596254AFD2D00FFFA73 /* DictyTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictyTable.swift; sourceTree = "<group>"; };
+		EFFB9597254AFD2D00FFFA73 /* TranslatesTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslatesTable.swift; sourceTree = "<group>"; };
+		EFFB9598254AFD2D00FFFA73 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		EFFB95CB254B183800FFFA73 /* MainPageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewModel.swift; sourceTree = "<group>"; };
+		EFFB95DB254C16F700FFFA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainPage.storyboard; sourceTree = "<group>"; };
 		EFFD646A253C3ACC006E46E3 /* TranslateSimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateSimpleViewController.swift; sourceTree = "<group>"; };
 		EFFD648F253C3DE4006E46E3 /* Translator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translator.swift; sourceTree = "<group>"; };
 		EFFD6497253C3EC0006E46E3 /* AWSTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSTranslator.swift; sourceTree = "<group>"; };
@@ -247,16 +252,15 @@
 		C90AF86523CB8D3400B6D192 /* Dicty */ = {
 			isa = PBXGroup;
 			children = (
+				EFFB9592254AFD2D00FFFA73 /* CoreData */,
+				EFFB9586254AFD2600FFFA73 /* Models */,
+				EFFB956D254AFD1500FFFA73 /* MainPage */,
+				EF8143B625477B0E00B6C8FA /* TabBar */,
 				EF8339CD25447C4700D9A5F3 /* Extensions */,
-				EF8904CE254179A300D5C9BD /* MainPage */,
-				C9198600254390B80044E0E4 /* Models */,
 				C91985E0254373750044E0E4 /* Database */,
 				EFFD648E253C3DD8006E46E3 /* Translator */,
 				C909132323D181990017E9FA /* DictysPage */,
-				C90AF89723CB8E3D00B6D192 /* Storyboards */,
 				C90AF86623CB8D3400B6D192 /* AppDelegate.swift */,
-				C91985F5254378750044E0E4 /* Constants.swift */,
-				C90AF86A23CB8D3400B6D192 /* Main.storyboard */,
 				C90AF86D23CB8D3500B6D192 /* Assets.xcassets */,
 				C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */,
 				C90AF87223CB8D3500B6D192 /* Info.plist */,
@@ -284,14 +288,6 @@
 			path = DictyUITests;
 			sourceTree = "<group>";
 		};
-		C90AF89723CB8E3D00B6D192 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				C90AF89B23CB8EC600B6D192 /* CoolStuff.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
 		C91985E0254373750044E0E4 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,16 +300,6 @@
 				C91986132543A13E0044E0E4 /* StaticData.swift */,
 			);
 			name = Database;
-			sourceTree = "<group>";
-		};
-		C9198600254390B80044E0E4 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C9198601254390CB0044E0E4 /* DictyModel.swift */,
-				C9198606254391090044E0E4 /* TranslateModel.swift */,
-				C91986182543A9C00044E0E4 /* LanguageModel.swift */,
-			);
-			name = Models;
 			sourceTree = "<group>";
 		};
 		C940601E23D0796400984853 /* OfflineDictionaries Page */ = {
@@ -339,6 +325,14 @@
 			path = SettingsPage;
 			sourceTree = "<group>";
 		};
+		EF8143B625477B0E00B6C8FA /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EF8143B725477B7200B6C8FA /* DictysTabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 		EF8339CD25447C4700D9A5F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,19 +341,6 @@
 				EFF36B6A2546151100220D8A /* UILabel+Additions.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		EF8904CE254179A300D5C9BD /* MainPage */ = {
-			isa = PBXGroup;
-			children = (
-				EFF83D1825430F170009981B /* MonthWordView */,
-				EFF83D0F2542F6CE0009981B /* TranslateView */,
-				C90AF89423CB8E3100B6D192 /* MainPage.storyboard */,
-				C956845323DBA75500C145D6 /* MainPageDictyCell.swift */,
-				C956845523DBA76B00C145D6 /* MainPageViewController.swift */,
-				EF24552F25422BF100EDD792 /* SelectLanguageViewController.swift */,
-			);
-			path = MainPage;
 			sourceTree = "<group>";
 		};
 		EFF36B622545DF2E00220D8A /* LanguageSettings */ = {
@@ -371,22 +352,99 @@
 			path = LanguageSettings;
 			sourceTree = "<group>";
 		};
-		EFF83D0F2542F6CE0009981B /* TranslateView */ = {
+		EFFB956D254AFD1500FFFA73 /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
-				EF8904D725417A3D00D5C9BD /* TranslateViewController.swift */,
-				EFF83D102542F71E0009981B /* TranslateView.swift */,
+				EFFB95D9254C16F700FFFA73 /* Dicty */,
+				EFFB95BB254B027300FFFA73 /* ViewModel */,
+				EFFB95BA254B025900FFFA73 /* View */,
+				EFFB956E254AFD1500FFFA73 /* SelectLanguageViewController.swift */,
+			);
+			path = MainPage;
+			sourceTree = "<group>";
+		};
+		EFFB956F254AFD1500FFFA73 /* MainPageView */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9570254AFD1500FFFA73 /* MainPageView.swift */,
+				EFFB9571254AFD1500FFFA73 /* MainPageViewController.swift */,
+			);
+			path = MainPageView;
+			sourceTree = "<group>";
+		};
+		EFFB9572254AFD1500FFFA73 /* TranslateView */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9573254AFD1500FFFA73 /* TranslateView.swift */,
+				EFFB9574254AFD1500FFFA73 /* TranslateViewController.swift */,
 			);
 			path = TranslateView;
 			sourceTree = "<group>";
 		};
-		EFF83D1825430F170009981B /* MonthWordView */ = {
+		EFFB9575254AFD1500FFFA73 /* MonthWordView */ = {
 			isa = PBXGroup;
 			children = (
-				EF8904D225417A2300D5C9BD /* MonthWordViewController.swift */,
-				EFF83D1925430F610009981B /* MonthWordView.swift */,
+				EFFB9576254AFD1500FFFA73 /* MonthWordView.swift */,
+				EFFB9577254AFD1500FFFA73 /* MonthWordViewController.swift */,
 			);
 			path = MonthWordView;
+			sourceTree = "<group>";
+		};
+		EFFB9586254AFD2600FFFA73 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9587254AFD2600FFFA73 /* StaticData.swift */,
+				EFFB9588254AFD2600FFFA73 /* DictyModel.swift */,
+				EFFB9589254AFD2600FFFA73 /* LanguageModel.swift */,
+				EFFB958A254AFD2600FFFA73 /* TranslateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFFB9592254AFD2D00FFFA73 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9593254AFD2D00FFFA73 /* Constants.swift */,
+				EFFB9594254AFD2D00FFFA73 /* Tables */,
+				EFFB9598254AFD2D00FFFA73 /* Database.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		EFFB9594254AFD2D00FFFA73 /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9595254AFD2D00FFFA73 /* LanguagesTable.swift */,
+				EFFB9596254AFD2D00FFFA73 /* DictyTable.swift */,
+				EFFB9597254AFD2D00FFFA73 /* TranslatesTable.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		EFFB95BA254B025900FFFA73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB9575254AFD1500FFFA73 /* MonthWordView */,
+				EFFB9572254AFD1500FFFA73 /* TranslateView */,
+				EFFB956F254AFD1500FFFA73 /* MainPageView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFFB95BB254B027300FFFA73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB95CB254B183800FFFA73 /* MainPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EFFB95D9254C16F700FFFA73 /* Dicty */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB95DA254C16F700FFFA73 /* MainPage.storyboard */,
+			);
+			path = Dicty;
 			sourceTree = "<group>";
 		};
 		EFFD6469253C3A82006E46E3 /* TranslateSimplePage */ = {
@@ -519,13 +577,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFB95DC254C16F700FFFA73 /* MainPage.storyboard in Resources */,
 				C90AF89A23CB8E8E00B6D192 /* Dictys.storyboard in Resources */,
 				C90AF87123CB8D3500B6D192 /* LaunchScreen.storyboard in Resources */,
 				C90AF86E23CB8D3500B6D192 /* Assets.xcassets in Resources */,
-				C90AF86C23CB8D3400B6D192 /* Main.storyboard in Resources */,
 				C979832A23D4F3B7005DC00F /* Dicty.storyboard in Resources */,
-				C90AF89C23CB8EC600B6D192 /* CoolStuff.storyboard in Resources */,
-				C90AF89623CB8E3100B6D192 /* MainPage.storyboard in Resources */,
 				C90AF89E23CB8F1B00B6D192 /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,46 +746,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFFB958D254AFD2600FFFA73 /* LanguageModel.swift in Sources */,
 				C909132723D182A80017E9FA /* DictysViewController.swift in Sources */,
-				C956845423DBA75500C145D6 /* MainPageDictyCell.swift in Sources */,
 				C93FD05E2546E2EB002C15A3 /* UserDefaultsUtils.swift in Sources */,
+				EFFB957B254AFD1500FFFA73 /* SelectLanguageViewController.swift in Sources */,
 				C90AF86723CB8D3400B6D192 /* AppDelegate.swift in Sources */,
 				C91985FC254378BE0044E0E4 /* Dictys.xcdatamodeld in Sources */,
+				EFFB958E254AFD2600FFFA73 /* TranslateModel.swift in Sources */,
+				EFFB957F254AFD1600FFFA73 /* TranslateViewController.swift in Sources */,
 				C940602223D07AB300984853 /* OfflineDictionariesCell.swift in Sources */,
 				C98B246B23CF71A8003D64E3 /* OfflineDictionariesViewController.swift in Sources */,
-				EFF83D1A25430F610009981B /* MonthWordView.swift in Sources */,
-				EFF83D112542F71E0009981B /* TranslateView.swift in Sources */,
 				EFFD6490253C3DE4006E46E3 /* Translator.swift in Sources */,
+				EFFB9581254AFD1600FFFA73 /* MonthWordViewController.swift in Sources */,
+				EFFB959E254AFD2D00FFFA73 /* Database.swift in Sources */,
 				EFFD646B253C3ACC006E46E3 /* TranslateSimpleViewController.swift in Sources */,
-				C91985F6254378750044E0E4 /* Constants.swift in Sources */,
 				C9210ECA23CB939D00630147 /* SettingsView.swift in Sources */,
 				EFF36B652545DF2E00220D8A /* LanguagesViewController.swift in Sources */,
 				EFFD6498253C3EC0006E46E3 /* AWSTranslator.swift in Sources */,
 				EF897CCC253CA15700B2B8EF /* AWSCredentials.generated.swift in Sources */,
+				EFFB9580254AFD1600FFFA73 /* MonthWordView.swift in Sources */,
 				EF8339D72544811A00D9A5F3 /* UIView+Additions.swift in Sources */,
-				C9DF75452545E28400031C89 /* TranslatesTable.swift in Sources */,
 				C98B246D23CF71FA003D64E3 /* OfflineDictionariesData.swift in Sources */,
+				EFFB957D254AFD1600FFFA73 /* MainPageViewController.swift in Sources */,
 				C909132523D181B50017E9FA /* DictyCell.swift in Sources */,
-				C9DF754A2545E38900031C89 /* LanguagesTable.swift in Sources */,
+				EFFB957E254AFD1600FFFA73 /* TranslateView.swift in Sources */,
+				EFFB95CC254B183800FFFA73 /* MainPageViewModel.swift in Sources */,
+				EFFB959D254AFD2D00FFFA73 /* TranslatesTable.swift in Sources */,
 				EFF36B662545DF2E00220D8A /* LanguagesData.swift in Sources */,
-				C91986142543A13E0044E0E4 /* StaticData.swift in Sources */,
-				C91985E22543738E0044E0E4 /* Database.swift in Sources */,
+				EFFB959B254AFD2D00FFFA73 /* LanguagesTable.swift in Sources */,
 				C98B245D23CF32DA003D64E3 /* SettingsCell.swift in Sources */,
+				EFFB957C254AFD1500FFFA73 /* MainPageView.swift in Sources */,
 				C979833023D4F951005DC00F /* WordData.swift in Sources */,
-				C9198602254390CB0044E0E4 /* DictyModel.swift in Sources */,
-				C9198607254391090044E0E4 /* TranslateModel.swift in Sources */,
+				EFFB958B254AFD2600FFFA73 /* StaticData.swift in Sources */,
+				EF8143B825477B7200B6C8FA /* DictysTabBarController.swift in Sources */,
+				EFFB959A254AFD2D00FFFA73 /* Constants.swift in Sources */,
 				EFF36B6B2546151100220D8A /* UILabel+Additions.swift in Sources */,
-				EF8904D325417A2400D5C9BD /* MonthWordViewController.swift in Sources */,
 				C979832E23D4F79F005DC00F /* WordCell.swift in Sources */,
-				EF8904D825417A3D00D5C9BD /* TranslateViewController.swift in Sources */,
+				EFFB958C254AFD2600FFFA73 /* DictyModel.swift in Sources */,
 				C909132B23D18CF00017E9FA /* DictysData.swift in Sources */,
-				C9DF75402545E24400031C89 /* DictyTable.swift in Sources */,
-				C91986192543A9C00044E0E4 /* LanguageModel.swift in Sources */,
+				EFFB959C254AFD2D00FFFA73 /* DictyTable.swift in Sources */,
 				C979832C23D4F3E2005DC00F /* DictyViewController.swift in Sources */,
 				C9210ECC23CB946B00630147 /* SettingsData.swift in Sources */,
 				EF8339CF2544804600D9A5F3 /* UIViewController+Additions.swift in Sources */,
-				C956845623DBA76B00C145D6 /* MainPageViewController.swift in Sources */,
-				EF24553025422BF100EDD792 /* SelectLanguageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -765,14 +823,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C90AF86A23CB8D3400B6D192 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C90AF86B23CB8D3400B6D192 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C90AF86F23CB8D3500B6D192 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -781,20 +831,20 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		C90AF89423CB8E3100B6D192 /* MainPage.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C90AF89523CB8E3100B6D192 /* Base */,
-			);
-			name = MainPage.storyboard;
-			sourceTree = "<group>";
-		};
 		C90AF89823CB8E8E00B6D192 /* Dictys.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C90AF89923CB8E8E00B6D192 /* Base */,
 			);
 			name = Dictys.storyboard;
+			sourceTree = "<group>";
+		};
+		EFFB95DA254C16F700FFFA73 /* MainPage.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFB95DB254C16F700FFFA73 /* Base */,
+			);
+			name = MainPage.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

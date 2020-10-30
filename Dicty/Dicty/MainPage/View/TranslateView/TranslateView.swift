@@ -16,8 +16,6 @@ class TranslateView: UIView {
         self.setSubviewForAutoLayout(self.verticalStackView)
 
         verticalStackView.edgesToSuperview()
-
-        self.backgroundColor = #colorLiteral(red: 0.9182453156, green: 0.9182668328, blue: 0.9182552695, alpha: 1)
         self.set(cornerRadius: 16)
 
         sourceLanguageButton.addTarget(delegate, action: #selector(sourceLanguageButtonTapped), for: UIControl.Event.touchUpInside)
@@ -25,21 +23,21 @@ class TranslateView: UIView {
     }
 
     func resizeLabels() {
-        guard
-            let sourceFontSize = self.sourceLanguageButton.titleLabel?.getFontSizeForLabel(),
-            let targetFontSize = self.targetLanguageButton.titleLabel?.getFontSizeForLabel() else {
-            return
-        }
-
-        let smallestFontSize = min(sourceFontSize, targetFontSize)
-
-         self.sourceLanguageButton.titleLabel?.font = self.sourceLanguageButton.titleLabel?.font.withSize(smallestFontSize)
-        self.sourceLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
-
-        self.targetLanguageButton.titleLabel?.font = self.targetLanguageButton.titleLabel?.font.withSize(smallestFontSize)
-        self.targetLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
-        self.sourceLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
-        self.sourceLanguageButton.setTitle("Русский", for: UIControl.State.normal)
+//        guard
+//            let sourceFontSize = self.sourceLanguageButton.titleLabel?.getFontSizeForLabel(),
+//            let targetFontSize = self.targetLanguageButton.titleLabel?.getFontSizeForLabel() else {
+//            return
+//        }
+//
+//        let smallestFontSize = min(sourceFontSize, targetFontSize)
+//
+//         self.sourceLanguageButton.titleLabel?.font = self.sourceLanguageButton.titleLabel?.font.withSize(smallestFontSize)
+//        self.sourceLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
+//
+//        self.targetLanguageButton.titleLabel?.font = self.targetLanguageButton.titleLabel?.font.withSize(smallestFontSize)
+//        self.targetLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
+//        self.sourceLanguageButton.titleLabel?.adjustsFontSizeToFitWidth = false
+//        self.sourceLanguageButton.setTitle("Русский", for: UIControl.State.normal)
     }
 
     weak var delegate: TranslateViewDelegate? {
@@ -56,7 +54,6 @@ class TranslateView: UIView {
     func reloadButtons() {
         sourceLanguageButton.setTitle(UDUtils.getSourceLang().name, for: .normal)
         targetLanguageButton.setTitle(UDUtils.getTargetLang().name, for: .normal)
-        self.layoutIfNeeded()
     }
 
     private func createSeparator() -> UIView {
@@ -114,7 +111,7 @@ class TranslateView: UIView {
         }
 
         button.imageView?.contentMode = ContentMode.scaleAspectFit
-        button.imageEdgeInsets = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
+        button.imageEdgeInsets = UIEdgeInsets(top: 4.0, left: 4.0, bottom: 4.0, right: 4.0)
         button.backgroundColor = .clear
         button.set(cornerRadius: 5.0)
         return button
@@ -127,7 +124,7 @@ class TranslateView: UIView {
         stackView.distribution = UIStackView.Distribution.fillEqually
         stackView.alignment = UIStackView.Alignment.fill
         stackView.spacing = 10.0
-        stackView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 0, right: 20)
+        stackView.layoutMargins = UIEdgeInsets(top: 5, left: 0, bottom: 0, right: 0)
         stackView.isLayoutMarginsRelativeArrangement = true
 
         return stackView
@@ -142,6 +139,7 @@ class TranslateView: UIView {
         textView.textColor = #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1)
         textView.isScrollEnabled = true
         textView.backgroundColor = .clear
+        //textView.setContentHuggingPriority(.defaultHigh, for: .vertical)
         return textView
     }()
 
@@ -149,14 +147,7 @@ class TranslateView: UIView {
         let view = UIView()
         let textViewFont = UIFont.systemFont(ofSize: 16)
         view.setSubviewForAutoLayout(sourceTextView)
-        sourceTextView.edgesToSuperview(
-            excluding: .none,
-            insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20),
-            relation: .equal,
-            priority: .defaultHigh,
-            isActive: true,
-            usingSafeArea: true)
-        sourceTextView.height(100)
+        sourceTextView.edgesToSuperview(insets: .left(12) + .right(12))
         return view
     }()
 
@@ -170,6 +161,7 @@ class TranslateView: UIView {
         textView.isEditable = false
         textView.isScrollEnabled = true
         textView.backgroundColor = .clear
+        //textView.setContentHuggingPriority(.defaultLow, for: .vertical)
         return textView
     }()
 
@@ -177,17 +169,76 @@ class TranslateView: UIView {
         let view = UIView()
         let textViewFont = UIFont.systemFont(ofSize: 16)
         view.setSubviewForAutoLayout(translatedTextView)
-        translatedTextView.edgesToSuperview(
-            excluding: .none,
-            insets: UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20),
-            relation: .equal,
-            priority: .defaultHigh,
-            isActive: true,
-            usingSafeArea: true)
-        translatedTextView.height(100)
+        translatedTextView.edgesToSuperview(insets: .left(12) + .right(12))
         return view
     }()
 
+    // MARK: Поле со словарем
+    private let commonLabel: UILabel = {
+        let label = UILabel()
+        label.text = "Словарь"
+        return label
+    }()
+
+    private let dictyImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = #imageLiteral(resourceName: "BookIcon")
+        return imageView
+    }()
+
+    private let dictyLabel: UILabel = {
+        let label = UILabel()
+        label.text = "The Foghorn"
+        return label
+    }()
+
+    private let arrImage: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        if #available(iOS 13.0, *) {
+            imageView.image = UIImage(systemName: "chevron.right")
+        } else {
+            // Fallback on earlier versions
+        }
+        return imageView
+    }()
+
+    private lazy var commonHStackView: UIStackView = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
+
+        let stackView = UIStackView(arrangedSubviews: [self.commonLabel, dictyHorizontalStackView])
+
+        stackView.axis = .horizontal
+        stackView.distribution = .fill
+        stackView.alignment = .center
+        stackView.spacing = 10.0
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+
+        stackView.layoutMargins = UIEdgeInsets(top: 5, left: 20, bottom: 10, right: 20)
+        stackView.isLayoutMarginsRelativeArrangement = true
+        return stackView
+    }()
+
+    private lazy var dictyHorizontalStackView: UIStackView = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
+
+        let stackView = UIStackView(arrangedSubviews: [self.dictyImage, self.dictyLabel, self.arrImage])
+
+        stackView.axis = .horizontal
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.spacing = 8.0
+
+        return stackView
+    }()
+
+    // MARK: Сборка
     private lazy var verticalStackView: UIStackView = { [unowned self] in
         let stackView = UIStackView(arrangedSubviews: [
             self.horizontalStackView,
@@ -195,14 +246,20 @@ class TranslateView: UIView {
             self.sourceTextViewContainerView,
             createSeparator(),
             self.translatedTextViewContainerView,
-            createSeparator()
+            createSeparator(),
+            self.commonHStackView
         ])
 
-        horizontalStackView.edgesToSuperview(excluding: .bottom)
         stackView.axis = NSLayoutConstraint.Axis.vertical
-        stackView.distribution = UIStackView.Distribution.fillProportionally
+        stackView.distribution = UIStackView.Distribution.fill
         stackView.alignment = UIStackView.Alignment.fill
-        stackView.spacing = 10.0
+        stackView.spacing = 5.0
+
+        // не работает под ios 12
+        stackView.backgroundColor = #colorLiteral(red: 0.9182453156, green: 0.9182668328, blue: 0.9182552695, alpha: 1)
+
+        sourceTextView.height(to: translatedTextView)
+
         return stackView
     }()
 }

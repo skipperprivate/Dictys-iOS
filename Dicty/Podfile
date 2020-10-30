@@ -8,11 +8,13 @@ target 'Dicty' do
   use_frameworks!
 
   # Pods for Dicty
-  pod 'AWSTranslate', '~> 2.6.19'
+  pod 'AWSTranslate'
   pod 'Sourcery'
   pod 'Eureka'
   pod 'SwiftLint'
   pod 'TinyConstraints'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   
   target 'DictyTests' do
     inherit! :search_paths

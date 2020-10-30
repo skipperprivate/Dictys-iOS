@@ -12,6 +12,10 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
 
     let cellReuseIdentifier = "cell"
 
+    typealias Callback = () -> Void
+
+    var didSelectCompletion: Callback? = nil
+
     @IBOutlet var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -42,10 +46,9 @@ class SelectLanguageViewController: UIViewController, UITableViewDelegate, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        print("You tapped cell number \(indexPath.row).")
         defaults.set(languages[indexPath.row].shortName.rawValue, forKey: lang ?? K.UserDefaults.SourceLang)
-        if let parent = self.presentingViewController as? TranslateViewController {
-            // TODO: @chtvrv call this fund here
-            parent.headerTranslateView.reloadButtons()
-        }
+
+        didSelectCompletion?()
+
         self.dismiss(animated: true, completion: nil)
     }
 }
