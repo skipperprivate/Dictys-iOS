@@ -9,19 +9,23 @@ class DictysTabBarController: UITabBarController {
         super.viewDidLoad()
 
         let mainPageViewController = MainPageViewController()
-        mainPageViewController.tabBarItem = UITabBarItem(title: "New word", image: #imageLiteral(resourceName: "PencilIcon"), tag: 0)
+        mainPageViewController.tabBarItem = UITabBarItem(title: "Новое слово", image: #imageLiteral(resourceName: "􀈌"), tag: 0)
 
         let settingsViewController = SettingsViewController()
-        settingsViewController.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "GearIcon"), tag: 1)
+        settingsViewController.tabBarItem = UITabBarItem(title: "Активность", image: #imageLiteral(resourceName: "􀤑"), tag: 1)
+    
 
         let dictysViewController: DictysViewController? = {
             let storyboard = UIStoryboard(name: "Dictys", bundle: Bundle.main)
             let dictysViewController = storyboard.instantiateViewController(withIdentifier: "DictysViewController") as? DictysViewController
             return dictysViewController
         }()
-        dictysViewController?.tabBarItem = UITabBarItem(title: "Dictys", image: #imageLiteral(resourceName: "BookIcon"), tag: 2)
+        dictysViewController?.tabBarItem = UITabBarItem(title: "Словари", image: #imageLiteral(resourceName: "􀤟"), tag: 2)
 
-        let tabBarList = [mainPageViewController, settingsViewController, dictysViewController].compactMap { $0 }
+        let tabBarList = [settingsViewController, mainPageViewController, dictysViewController].compactMap { $0 }
+
         self.viewControllers = tabBarList
+        self.selectedIndex = 1
+        self.tabBar.tintColor = UIColor.black
     }
 }
