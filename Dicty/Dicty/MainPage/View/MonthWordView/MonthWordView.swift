@@ -62,7 +62,6 @@ class MonthWordView: UIView {
 
     private let arrowImage: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = #imageLiteral(resourceName: "PencilIcon").withAlignmentRectInsets(UIEdgeInsets(top: -10, left: -10, bottom: -10, right: -10))
 
         imageView.contentMode = .scaleAspectFit
         if #available(iOS 13.0, *) {

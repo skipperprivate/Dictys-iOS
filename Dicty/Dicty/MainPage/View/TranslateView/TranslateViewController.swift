@@ -12,57 +12,28 @@ enum TranslateViewPlaceholders: String {
 }
 
 class TranslateViewController: UIViewController, TranslateViewDelegate {
-    var sourceLang = UDUtils.getSourceLang()
-    var targetLang = UDUtils.getTargetLang()
-
     let translateView = TranslateView()
     private let disposeBag = DisposeBag()
-    public let translate: PublishSubject<TranslateModel> = PublishSubject()
+    var viewModel: MainPageViewModel? = nil
 
+    private var isViewControllerPresentedForSelectSourceLang = true
+    private var selectVC: SelectLanguageViewController?
+
+    // перепривязать на rx
     func onSourceLanguageButtonTap() {
-        guard let selectLanguageVC: SelectLanguageViewController = {
-            let storyboard = UIStoryboard(name: "MainPage", bundle: Bundle.main)
-            guard let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
-            else {
-                return nil
-            }
-            return selectLanguageVC
-        }() else {
+        guard let selectVC = self.selectVC else {
             return
         }
-
-        selectLanguageVC.didSelectCompletion = { [weak self] in
-            guard let self = self else {
-                return
-            }
-            self.translateView.reloadButtons()
-        }
-
-        selectLanguageVC.lang = K.UserDefaults.SourceLang
-        self.present(selectLanguageVC, animated: true, completion: nil)
+        isViewControllerPresentedForSelectSourceLang = true
+        self.present(selectVC, animated: true, completion: nil)
     }
 
     func onTargetLanguageButtonTap() {
-        guard let selectLanguageVC: SelectLanguageViewController = {
-            let storyboard = UIStoryboard(name: "MainPage", bundle: Bundle.main)
-            guard let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
-            else {
-                return nil
-            }
-            return selectLanguageVC
-        }() else {
+        guard let selectVC = self.selectVC else {
             return
         }
-
-        selectLanguageVC.lang = K.UserDefaults.TargetLang
-        selectLanguageVC.didSelectCompletion = { [weak self] in
-            guard let self = self else {
-                return
-            }
-            self.translateView.reloadButtons()
-        }
-
-        self.present(selectLanguageVC, animated: true, completion: nil)
+        isViewControllerPresentedForSelectSourceLang = false
+        self.present(selectVC, animated: true, completion: nil)
     }
 
     override func loadView() {
@@ -79,6 +50,34 @@ class TranslateViewController: UIViewController, TranslateViewDelegate {
         super.viewDidLoad()
         setupToHideKeyboardOnTapOnView()
         setupTextView()
+        setupChildController()
+    }
+
+    func setupChildController() {
+        self.selectVC = {
+            let storyboard = UIStoryboard(name: "MainPage", bundle: Bundle.main)
+            guard let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SelectLanguageViewController") as? SelectLanguageViewController
+            else {
+                return nil
+            }
+            return selectLanguageVC
+        }()
+
+        guard let selectVC = self.selectVC else {
+            return
+        }
+
+        selectVC.selectableLanguage
+            .subscribe(onNext: { [weak self] lang in
+                guard let self = self else {
+                    return
+                }
+                if self.isViewControllerPresentedForSelectSourceLang {
+                    self.viewModel?.sourceLanguage.accept(lang)
+                } else {
+                    self.viewModel?.targetLanguage.accept(lang)
+                }
+            }).disposed(by: disposeBag)
     }
 }
 
@@ -97,23 +96,29 @@ extension TranslateViewController: UITextViewDelegate {
 //        }
 //    }
 
+    // здесь не только textView
     func setupTextView() {
-        self.translate
-            .map { translateModel in
-                return translateModel.translated
-            }
+        self.viewModel?.translatedPhrase
+            .compactMap { $0 }
             .bind(to: self.translateView.translatedTextView.rx.text)
             .disposed(by: disposeBag)
 
+        guard let mainVC = self.parent as? MainPageViewController else {
+            return
+        }
+
         self.translateView.sourceTextView.rx.text
-            .debounce(.milliseconds(800), scheduler: MainScheduler.instance)
-            .subscribe(onNext: { [weak self] text in
-                guard let self = self else {
-                    return
-                }
-                if let mainVC = self.parent as? MainPageViewController {
-                    mainVC.viewModel.fetchTranslate(phrase: text ?? "", sourceLang: .russian, targetLang: .english)
-                }
-            }).disposed(by: disposeBag)
+            .bind(to: mainVC.viewModel.originalPhrase)
+            .disposed(by: disposeBag)
+
+        self.viewModel?.targetLanguage
+            .map { $0.rawValue }
+            .bind(to: self.translateView.targetLanguageButton.rx.title())
+            .disposed(by: disposeBag)
+
+        self.viewModel?.sourceLanguage
+            .map { $0.rawValue }
+            .bind(to: self.translateView.sourceLanguageButton.rx.title())
+            .disposed(by: disposeBag)
     }
 }

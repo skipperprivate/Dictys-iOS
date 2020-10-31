@@ -7,7 +7,7 @@ import Foundation
 // TODO: добавить description для формы
 
 enum TranslatorApiResponse {
-    case success(TranslateModel)
+    case success(String)
     case failure(Error?)
 }
 

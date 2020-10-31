@@ -20,8 +20,8 @@ class AWSTranslator: Translator {
     func translatePhrase(phrase: String, sourceLang: TranslatorSupportedLanguage, targetLang: TranslatorSupportedLanguage,
                          completion: @escaping (TranslatorApiResponse) -> Void) {
         let translateRequest = AWSTranslateTranslateTextRequest()
-        translateRequest?.sourceLanguageCode = sourceLang.rawValue
-        translateRequest?.targetLanguageCode = targetLang.rawValue
+        translateRequest?.sourceLanguageCode = sourceLang.description
+        translateRequest?.targetLanguageCode = targetLang.description
         translateRequest?.text = phrase
 
         let translateCallback: (AWSTranslateTranslateTextResponse?, Error?) -> Void = { response, error in
@@ -29,7 +29,7 @@ class AWSTranslator: Translator {
                 completion(.failure(error))
                 return
             }
-            completion(.success(.init(original: phrase, originalLang: sourceLang, translated: response.translatedText ?? "" , transatedLang: targetLang)))
+            completion(.success(response.translatedText ?? ""))
             return
         }
         translateClient.translateText(translateRequest!, completionHandler: translateCallback)

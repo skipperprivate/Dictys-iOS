@@ -51,11 +51,6 @@ class TranslateView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func reloadButtons() {
-        sourceLanguageButton.setTitle(UDUtils.getSourceLang().name, for: .normal)
-        targetLanguageButton.setTitle(UDUtils.getTargetLang().name, for: .normal)
-    }
-
     private func createSeparator() -> UIView {
         let separator = UIView()
         separator.heightAnchor.constraint(equalToConstant: 1).isActive = true
@@ -71,7 +66,11 @@ class TranslateView: UIView {
     }()
 
     // MARK: Subviews
-    private lazy var sourceLanguageButton: UIButton = { [unowned self] in
+    lazy var sourceLanguageButton: UIButton = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
+
         let button = UIButton(type: UIButton.ButtonType.system)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Regular", size: 16.0)
         button.setTitle(UDUtils.getSourceLang().name, for: UIControl.State.normal)
@@ -85,7 +84,11 @@ class TranslateView: UIView {
         return button
     }()
 
-    private lazy var targetLanguageButton: UIButton = { [unowned self] in
+    lazy var targetLanguageButton: UIButton = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
+
         let button = UIButton(type: UIButton.ButtonType.system)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Regular", size: 16.0)
         button.setTitle(UDUtils.getTargetLang().name, for: UIControl.State.normal)
@@ -117,7 +120,10 @@ class TranslateView: UIView {
         return button
     }()
 
-    private lazy var horizontalStackView: UIStackView = { [unowned self] in
+    private lazy var horizontalStackView: UIStackView = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
         let stackView = UIStackView(arrangedSubviews: [self.sourceLanguageButton, self.changeLanguagesButton, self.targetLanguageButton])
 
         stackView.axis = NSLayoutConstraint.Axis.horizontal
@@ -239,7 +245,10 @@ class TranslateView: UIView {
     }()
 
     // MARK: Сборка
-    private lazy var verticalStackView: UIStackView = { [unowned self] in
+    private lazy var verticalStackView: UIStackView = { [weak self] in
+        guard let self = self else {
+            return .init()
+        }
         let stackView = UIStackView(arrangedSubviews: [
             self.horizontalStackView,
             createSeparator(),
@@ -255,7 +264,7 @@ class TranslateView: UIView {
         stackView.alignment = UIStackView.Alignment.fill
         stackView.spacing = 5.0
 
-        // не работает под ios 12
+        // не работает под ios 12 ?
         stackView.backgroundColor = #colorLiteral(red: 0.9182453156, green: 0.9182668328, blue: 0.9182552695, alpha: 1)
 
         sourceTextView.height(to: translatedTextView)

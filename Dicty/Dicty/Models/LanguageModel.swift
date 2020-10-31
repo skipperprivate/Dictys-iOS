@@ -1,4 +1,6 @@
+//
 //  Copyright © 2020 Dictys
+//
 
 import CoreData
 

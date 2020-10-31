@@ -36,12 +36,14 @@ class MainPageViewController: UIViewController {
         monthWordViewController.didMove(toParent: self)
         translateViewController.didMove(toParent: self)
 
+        translateViewController.viewModel = self.viewModel
+
         mainView.setupViews(monthWordView: monthWordViewController.view, translateWordView: translateViewController.view)
 
-        viewModel
-            .translate
-            .observeOn(MainScheduler.instance)
-            .bind(to: translateViewController.translate)
-            .disposed(by: disposeBag)
+        //viewModel
+            //.translatedPhrase
+            //.observeOn(MainScheduler.instance)
+            //.bind(to: translateViewController.translatedPhrase)
+            //.disposed(by: disposeBag)
     }
 }
