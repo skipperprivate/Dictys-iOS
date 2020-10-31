@@ -11,12 +11,8 @@ class DictysTabBarController: UITabBarController {
         let mainPageViewController = MainPageViewController()
         mainPageViewController.tabBarItem = UITabBarItem(title: "New word", image: #imageLiteral(resourceName: "PencilIcon"), tag: 0)
 
-        let selectLanguageViewController: SettingsViewController? = {
-            let storyboard = UIStoryboard(name: "Settings", bundle: Bundle.main)
-            let selectLanguageVC = storyboard.instantiateViewController(withIdentifier: "SettingsViewController") as? SettingsViewController
-            return selectLanguageVC
-        }()
-        selectLanguageViewController?.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "GearIcon"), tag: 1)
+        let settingsViewController = SettingsViewController()
+        settingsViewController.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "GearIcon"), tag: 1)
 
         let dictysViewController: DictysViewController? = {
             let storyboard = UIStoryboard(name: "Dictys", bundle: Bundle.main)
@@ -25,7 +21,7 @@ class DictysTabBarController: UITabBarController {
         }()
         dictysViewController?.tabBarItem = UITabBarItem(title: "Dictys", image: #imageLiteral(resourceName: "BookIcon"), tag: 2)
 
-        let tabBarList = [mainPageViewController, selectLanguageViewController, dictysViewController].compactMap { $0 }
+        let tabBarList = [mainPageViewController, settingsViewController, dictysViewController].compactMap { $0 }
         self.viewControllers = tabBarList
     }
 }
