@@ -8,7 +8,7 @@ import RxCocoa
 
 enum TranslateViewPlaceholders: String {
     case sourceTextPlaceholder = "Введи новое слово..."
-    case translatedTextPlaceholder = "Здесь будет перевод"
+    case translatedTextPlaceholder = "Enter a new word..."
 }
 
 class TranslateViewController: UIViewController, TranslateViewDelegate {
@@ -49,7 +49,7 @@ class TranslateViewController: UIViewController, TranslateViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupToHideKeyboardOnTapOnView()
-        setupTextView()
+        setupUIBindings()
         setupChildController()
     }
 
@@ -81,34 +81,54 @@ class TranslateViewController: UIViewController, TranslateViewDelegate {
     }
 }
 
-extension TranslateViewController: UITextViewDelegate {
-//    func textViewDidEndEditing(_ textView: UITextView) {
-//        if textView.text.isEmpty {
-//            textView.text = TranslateViewPlaceholders.sourceTextPlaceholder.rawValue
-//            textView.textColor = #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1)
-//        }
-//    }
-//
-//    func textViewDidBeginEditing(_ textView: UITextView) {
-//        if textView.textColor == #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1) {
-//            textView.text = ""
-//            textView.textColor = .black
-//        }
-//    }
+extension TranslateViewController {
+    func setupUIBindings() {
+        self.translateView.sourceTextView.rx.didBeginEditing
+            .map { self.translateView.sourceTextView.text }
+            .subscribe(onNext: { text in
+                if self.translateView.sourceTextView.textColor == #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1) {
+                    self.translateView.sourceTextView.text = ""
+                    self.translateView.translatedTextView.text = ""
+                    self.translateView.sourceTextView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                    self.translateView.translatedTextView.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+                }
+            })
+            .disposed(by: disposeBag)
 
-    // здесь не только textView
-    func setupTextView() {
+        self.translateView.sourceTextView.rx.didEndEditing
+            .map { self.translateView.sourceTextView.text }
+            .subscribe(onNext: { text in
+                guard let text = text else {
+                    return
+                }
+                if text.isEmpty {
+                    self.translateView.sourceTextView.text = TranslateViewPlaceholders.sourceTextPlaceholder.rawValue
+                    self.translateView.translatedTextView.text = ""
+                    self.translateView.sourceTextView.textColor = #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1)
+                    self.translateView.translatedTextView.textColor = #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1)
+                }
+            })
+            .disposed(by: disposeBag)
+
+        self.translateView.changeLanguagesButton.rx
+            .tap
+            .bind {
+                self.viewModel?.swapLanguages()
+            }
+            .disposed(by: disposeBag)
+
         self.viewModel?.translatedPhrase
             .compactMap { $0 }
             .bind(to: self.translateView.translatedTextView.rx.text)
             .disposed(by: disposeBag)
 
-        guard let mainVC = self.parent as? MainPageViewController else {
-            return
-        }
+        self.viewModel?.originalPhrase
+            .compactMap { $0 }
+            .bind(to: self.translateView.sourceTextView.rx.text)
+            .disposed(by: disposeBag)
 
         self.translateView.sourceTextView.rx.text
-            .bind(to: mainVC.viewModel.originalPhrase)
+            .bind(to: self.viewModel!.originalPhrase)
             .disposed(by: disposeBag)
 
         self.viewModel?.targetLanguage

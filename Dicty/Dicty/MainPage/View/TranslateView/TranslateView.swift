@@ -71,7 +71,7 @@ class TranslateView: UIView {
             return .init()
         }
 
-        let button = UIButton(type: UIButton.ButtonType.system)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Regular", size: 16.0)
         button.setTitle(UDUtils.getSourceLang().name, for: UIControl.State.normal)
         button.setTitleColor(#colorLiteral(red: 0.2743373811, green: 0.2743446529, blue: 0.2743407488, alpha: 1), for: UIControl.State.normal)
@@ -89,7 +89,7 @@ class TranslateView: UIView {
             return .init()
         }
 
-        let button = UIButton(type: UIButton.ButtonType.system)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         button.titleLabel?.font = UIFont(name: "AvenirNext-Regular", size: 16.0)
         button.setTitle(UDUtils.getTargetLang().name, for: UIControl.State.normal)
         button.setTitleColor(#colorLiteral(red: 0.2743373811, green: 0.2743446529, blue: 0.2743407488, alpha: 1), for: UIControl.State.normal)
@@ -102,7 +102,7 @@ class TranslateView: UIView {
         return button
     }()
 
-    private let changeLanguagesButton: UIButton = {
+    lazy var changeLanguagesButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setTitleColor(UIColor.white, for: UIControl.State.normal)
         if #available(iOS 13.0, *) {
