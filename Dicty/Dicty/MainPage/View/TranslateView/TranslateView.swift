@@ -165,6 +165,8 @@ class TranslateView: UIView {
         textView.text = textViewText
         textView.textColor = #colorLiteral(red: 0.5217987895, green: 0.5218115449, blue: 0.52180475, alpha: 1)
         textView.isEditable = false
+        textView.isSelectable = false
+        textView.isUserInteractionEnabled = false
         textView.isScrollEnabled = true
         textView.backgroundColor = .clear
         //textView.setContentHuggingPriority(.defaultLow, for: .vertical)
