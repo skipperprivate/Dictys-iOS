@@ -1,24 +1,24 @@
 {
   "images" : [
     {
+      "filename" : "icons8-звезда-91.png",
       "idiom" : "universal",
-      "filename" : "icons8-звезда-30.png",
       "scale" : "1x"
     },
     {
+      "filename" : "icons8-звезда-30.png",
       "idiom" : "universal",
-      "filename" : "icons8-звезда-60.png",
       "scale" : "2x"
     },
     {
-      "idiom" : "universal",
       "filename" : "icons8-звезда-90.png",
+      "idiom" : "universal",
       "scale" : "3x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   },
   "properties" : {
     "template-rendering-intent" : "template"

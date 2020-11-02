@@ -40,11 +40,11 @@ class SettingsTableViewCell: UITableViewCell {
 
         stackView.axis = NSLayoutConstraint.Axis.horizontal
         stackView.distribution = UIStackView.Distribution.fillProportionally
-        stackView.alignment = UIStackView.Alignment.center
+        stackView.alignment = UIStackView.Alignment.fill
         stackView.spacing = 5.0
-
-        pictureView.edgesToSuperview(excluding: .trailing)
-        label.edgesToSuperview(excluding: .leading)
+        
+        pictureView.edgesToSuperview(excluding: .trailing, insets: .left(0) + .top(4) + .bottom(4))
+        label.edgesToSuperview(insets: .left(60) + .top(4) + .bottom(4))
 
         return stackView
     }()
@@ -57,7 +57,7 @@ class SettingsTableViewCell: UITableViewCell {
             self.backgroundColor = .clear
         }
         self.addSubview(innerHorizontalStackView)
-        innerHorizontalStackView.edgesToSuperview(insets: .left(20) + .right(20) + .bottom(5) + .top(5))
+        innerHorizontalStackView.edgesToSuperview(insets: .bottom(5) + .top(5))
         self.accessoryType = .disclosureIndicator
     }
     
